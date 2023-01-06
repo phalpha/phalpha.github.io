@@ -12,7 +12,15 @@
 integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
 <style>
 body {
-     background: linear-gradient(135deg, #cf8df7, #f5c982);
+     /*background: linear-gradient(135deg, #cf8df7, #f5c982);*/
+     margin: 0;
+     padding: 0;
+     height: 100vh;
+   }
+   #particles-js
+   {
+     height: 100%;
+     background: linear-gradient(135deg, #cf8df7, #f5c982)
    }
   .full-element {
   height: 100vh; /* 100% of the viewport height */
@@ -22,6 +30,10 @@ body {
 </head>
 
 <body>
+  <div id="particles-js"></div>
+  <script type="text/javascript" src="particles.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <a class="navbar-brand" href="#">Poojit Hegde</a>
