@@ -3,7 +3,7 @@
 <script>
 (async function() {
   try {
-    const response = await fetch('https://api.github.com/users/YOUR_GITHUB_USERNAME/repos?sort=updated');
+    const response = await fetch('https://api.github.com/users/phalpha/repos?sort=updated');
     const repos = await response.json();
     
     let html = '';
