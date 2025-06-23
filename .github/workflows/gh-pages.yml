@@ -33,4 +33,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}  # Auto-generated token
         publish_dir: ./public  # Hugo's default output directory
-        cname: yourdomain.com  # Only if using custom domain
+        keep_files: true
+        #cname: yourdomain.com  # Only if using custom domain
+
+
