@@ -1,39 +1,34 @@
-name: Deploy Hugo Site to GitHub Pages
+name: Deploy Hugo Site
 
 on:
   push:
-    branches: [main]  # Triggers on pushes to main branch
+    branches: [main]
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest  # Uses latest Ubuntu runner
-    
+  build-deploy:
+    runs-on: ubuntu-latest
     steps:
-    # Checkout your repository
-    - name: Checkout code
-      uses: actions/checkout@v3
-      with:
-        submodules: recursive  # Important for Hugo themes
-        fetch-depth: 0          # Gets full history for proper lastmod
-    
-    # Install Hugo
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'   # Always use latest Hugo
-        extended: true            # Required for Terminal theme
-    
-    # Build the site
-    - name: Build site
-      run: hugo --minify  # Minifies HTML/CSS/JS for performance
-    
-    # Deploy to GitHub Pages
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}  # Auto-generated token
-        publish_dir: ./public  # Hugo's default output directory
-        keep_files: true
-        #cname: yourdomain.com  # Only if using custom domain
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.111.3'  # Stable version
+          extended: true
 
+      - name: Build
+        run: |
+          hugo --minify --verbose
+          ls -l public  # Debug output
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          keep_files: true
+          enable_jekyll: false

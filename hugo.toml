@@ -35,3 +35,9 @@ theme = 'terminal'
     url = '/blog'
     weight = 4
 theme = 'terminal'
+
+[build]
+  noJSConfigInAssets = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
