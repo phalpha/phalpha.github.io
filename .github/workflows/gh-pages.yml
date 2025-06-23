@@ -1,0 +1,36 @@
+name: Deploy Hugo Site to GitHub Pages
+
+on:
+  push:
+    branches: [main]  # Triggers on pushes to main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Uses latest Ubuntu runner
+    
+    steps:
+    # Checkout your repository
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive  # Important for Hugo themes
+        fetch-depth: 0          # Gets full history for proper lastmod
+    
+    # Install Hugo
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'   # Always use latest Hugo
+        extended: true            # Required for Terminal theme
+    
+    # Build the site
+    - name: Build site
+      run: hugo --minify  # Minifies HTML/CSS/JS for performance
+    
+    # Deploy to GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # Auto-generated token
+        publish_dir: ./public  # Hugo's default output directory
+        cname: yourdomain.com  # Only if using custom domain

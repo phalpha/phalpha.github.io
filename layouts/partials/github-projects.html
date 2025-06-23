@@ -1,0 +1,33 @@
+<div id="github-projects" class="project-grid"></div>
+
+<script>
+(async function() {
+  try {
+    const response = await fetch('https://api.github.com/users/YOUR_GITHUB_USERNAME/repos?sort=updated');
+    const repos = await response.json();
+    
+    let html = '';
+    repos.forEach(repo => {
+      if (!repo.archived && !repo.fork) {
+        html += `
+        <div class="project-card">
+          <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+          <p>${repo.description || 'No description available'}</p>
+          <div class="project-meta">
+            <span>★ ${repo.stargazers_count}</span>
+            <span>${repo.language || ''}</span>
+            <span>Updated: ${new Date(repo.pushed_at).toLocaleDateString()}</span>
+          </div>
+        </div>
+        `;
+      }
+    });
+    
+    document.getElementById('github-projects').innerHTML = html;
+  } catch (error) {
+    console.error('Error loading GitHub projects:', error);
+    document.getElementById('github-projects').innerHTML = 
+      '<p>Projects could not be loaded at this time.</p>';
+  }
+})();
+</script>
