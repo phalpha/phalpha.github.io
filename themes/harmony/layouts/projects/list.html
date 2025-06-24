@@ -1,0 +1,37 @@
+{{ define "main" }}
+<section class="section projects">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <div class="content">
+            {{ .Content }}
+        </div>
+        <div class="project-grid">
+            {{ range where .Site.RegularPages "Section" "projects" }}
+            <a href="{{ .RelPermalink }}" class="project-card">
+                {{ if .Params.image }}
+                    {{ $image := resources.Get .Params.image }}
+                    {{ if $image }}
+                        {{ $thumbnail := $image.Fill "400x300 Center" }}
+                        <img src="{{ $thumbnail.RelPermalink }}" alt="{{ .Title }}">
+                    {{ end }}
+                {{ end }}
+                <div class="project-content">
+                    <h3>{{ .Title }}</h3>
+                    <p>{{ .Summary }}</p>
+                    <div class="project-meta">
+                        {{ if .Date }}<span>{{ .Date.Format "Jan 2006" }}</span>{{ end }}
+                        {{ if .Params.tags }}
+                        <div class="tags">
+                            {{ range .Params.tags }}
+                            <span class="tag">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

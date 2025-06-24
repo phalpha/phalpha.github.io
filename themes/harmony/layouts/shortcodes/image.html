@@ -1,0 +1,30 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $caption := .Get "caption" | default "" }}
+{{ $width := .Get "width" | default "800" }}
+
+{{/* First try to find the image in page resources */}}
+{{ $image := .Page.Resources.GetMatch $src }}
+{{ if not $image }}
+    {{/* If not found, try global assets */}}
+    {{ $image = resources.Get $src }}
+{{ end }}
+
+{{ if $image }}
+    <figure class="content-image">
+        <img src="{{ ($image.Resize (printf "%sx" $width)).RelPermalink }}" alt="{{ $alt }}">
+        {{ if $caption }}
+        <figcaption>{{ $caption | markdownify }}</figcaption>
+        {{ end }}
+    </figure>
+{{ else }}
+    <div class="image-error">
+        <p>Image not found: {{ $src }}</p>
+        <p>Looked in:</p>
+        <ul>
+            <li>Page bundle: {{ .Page.File.Dir }}{{ $src }}</li>
+            <li>Global assets: assets/{{ $src }}</li>
+        </ul>
+        <p>Current page: {{ .Page.RelPermalink }}</p>
+    </div>
+{{ end }}

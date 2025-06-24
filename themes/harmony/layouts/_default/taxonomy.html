@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container">
+    <section class="section blog">
+        <h1>Posts tagged: "{{ .Title }}"</h1>
+        
+        {{ partial "tag-filter.html" . }}
+        
+        <div class="post-list">
+            {{ range .Pages }}
+                {{ .Render "summary" }}
+            {{ end }}
+        </div>
+    </section>
+</div>
+{{ end }}

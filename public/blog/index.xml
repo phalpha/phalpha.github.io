@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Your Name</title>
-    <link>https://phalpha.github.io/blog/</link>
-    <description>Recent content in Blogs on Your Name</description>
+    <title>Blog on peace, truth, love, joy</title>
+    <link>http://localhost:52160/blog/</link>
+    <description>Recent content in Blog on peace, truth, love, joy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://phalpha.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:52160/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Future of Ethical Technology</title>
+      <link>http://localhost:52160/blog/second_blog/</link>
+      <pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52160/blog/second_blog/</guid>
+      <description>Exploring how we can build technology that respects human dignity</description>
+    </item>
   </channel>
 </rss>

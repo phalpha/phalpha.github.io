@@ -1,0 +1,42 @@
+{{ define "main" }}
+<section class="section project-single">
+    <div class="container">
+        <article class="project">
+            <header>
+                <h1>{{ .Title }}</h1>
+                <div class="project-meta">
+                    {{ if .Date }}<span class="date">{{ .Date.Format "January 2, 2006" }}</span>{{ end }}
+                    {{ if .Params.tags }}
+                    <div class="tags">
+                        {{ range .Params.tags }}
+                        <span class="tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </header>
+
+            {{ if .Params.image }}
+                {{ $image := resources.Get .Params.image }}
+                {{ if $image }}
+                <div class="project-featured-image">
+                    <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+                </div>
+                {{ end }}
+            {{ end }}
+
+            <div class="project-content">
+                {{ .Content }}
+            </div>
+
+            {{ if .Params.link }}
+            <div class="project-link">
+                <a href="{{ .Params.link }}" class="button" target="_blank">
+                    Visit Project
+                </a>
+            </div>
+            {{ end }}
+        </article>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,51 @@
+{{ define "main" }}
+<div class="container">
+    <section class="section blog">
+        <h1>Blog</h1>
+        
+        {{ partial "tag-filter.html" . }}
+        
+        <div class="post-list">
+            {{ range .Paginator.Pages }}
+                <article class="post-card" 
+                         data-tags="{{ range .Params.tags }}{{ . | urlize }} {{ end }}">
+                    {{ if .Params.image }}
+                        {{ $imagePath := .Params.image }}
+                        {{/* First try to get image from page resources */}}
+                        {{ $image := .Resources.GetMatch $imagePath }}
+                        {{ if not $image }}
+                            {{/* Fallback to global assets */}}
+                            {{ $image = resources.Get $imagePath }}
+                        {{ end }}
+                        
+                        {{ if $image }}
+                        <div class="post-image">
+                            <img src="{{ ($image.Fill "400x300 Center").RelPermalink }}" alt="{{ .Title }}">
+                        </div>
+                        {{ else }}
+                        <div class="post-image">
+                            <img src="{{ $imagePath | relURL }}" alt="{{ .Title }}">
+                        </div>
+                        {{ end }}
+                    {{ end }}
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span>{{ .Date.Format "January 2, 2006" }}</span>
+                            <span>{{ .ReadingTime }} min read</span>
+                        </div>
+                        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                        <p>{{ .Summary }}</p>
+                        <div>
+                            {{ range .Params.tags }}
+                            <span class="category-tag {{ . | lower }}">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                    </div>
+                </article>
+            {{ end }}
+        </div>
+        
+        {{ template "_internal/pagination.html" . }}
+    </section>
+</div>
+{{ end }}

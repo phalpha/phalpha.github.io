@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=52160&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History | peace, truth, love, joy</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:52160/css/main.min.4fe4ee38f4360d89bdf1bc5579653610047d8a448208f103bb0bea1da11c5b82.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        
+        <div class="title-container">
+            <a href="http://localhost:52160/" class="site-title-link">
+                <h1 class="site-title">peace, truth, love, joy</h1>
+            </a>
+            <div class="site-subtitle">A public space for sharing my personal reflections!</div>
+        </div>
+        <nav>
+            <ul>
+                
+                    <li><a href="/about/">About</a></li>
+                
+                    <li><a href="/projects/">Projects</a></li>
+                
+                    <li><a href="/gallery/">Gallery</a></li>
+                
+                    <li><a href="/blog/">Blog</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<div class="container">
+    <section class="section blog">
+        <h1>Posts tagged: "History"</h1>
+        
+        <div class="tag-filter">
+    <h3>Filter by Topic</h3>
+    <div class="tag-cloud">
+        
+            <a href="?tag=data" 
+               class="tag "
+               data-tag="data">
+                Data (1)
+            </a>
+        
+            <a href="?tag=ethics" 
+               class="tag "
+               data-tag="ethics">
+                Ethics (1)
+            </a>
+        
+            <a href="?tag=history" 
+               class="tag active"
+               data-tag="history">
+                History (1)
+            </a>
+        
+            <a href="?tag=mathematics" 
+               class="tag "
+               data-tag="mathematics">
+                Mathematics (1)
+            </a>
+        
+            <a href="?tag=science" 
+               class="tag "
+               data-tag="science">
+                Science (1)
+            </a>
+        
+            <a href="?tag=technology" 
+               class="tag "
+               data-tag="technology">
+                Technology (2)
+            </a>
+        
+        <a href="/blog" class="tag clear-filter">Clear Filters</a>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedTag = urlParams.get('tag');
+    
+    if (selectedTag) {
+        
+        document.querySelectorAll('.tag').forEach(tag => {
+            if (tag.dataset.tag === selectedTag) {
+                tag.classList.add('active');
+            }
+        });
+        
+        
+        document.querySelectorAll('.post-card').forEach(post => {
+            const postTags = post.dataset.tags.split(' ');
+            if (!postTags.includes(selectedTag)) {
+                post.style.display = 'none';
+            }
+        });
+    }
+});
+</script>
+        
+        <div class="post-list">
+            
+                
+            
+        </div>
+    </section>
+</div>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Created with ❤️ to share peace, truth, love, and joy</p>
+            <p>© 2025 - All rights reserved</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

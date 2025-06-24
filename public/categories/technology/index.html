@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=64849&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology | peace, truth, love, joy</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:64849/css/main.min.b23003d3ccdefef76e4b43a15de1baa9902acb0350ccf2084118a9994c8b57e1.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="site-title">peace, truth, love, joy</div>
+        <div class="site-subtitle">A public space for sharing my personal reflections!</div>
+        <nav>
+            <ul>
+                
+                <li><a href="/#about">About</a></li>
+                
+                <li><a href="/#projects">Projects</a></li>
+                
+                <li><a href="/#gallery">Gallery</a></li>
+                
+                <li><a href="/blog">Blog</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<div class="container">
+    <section class="section blog">
+        <h1>Posts tagged: "Technology"</h1>
+        
+        <div class="tag-filter">
+    <h3>Filter by Topic</h3>
+    <div class="tag-cloud">
+        
+            <a href="?tag=ethics" 
+               class="tag "
+               data-tag="ethics">
+                Ethics (1)
+            </a>
+        
+            <a href="?tag=politics" 
+               class="tag "
+               data-tag="politics">
+                Politics (1)
+            </a>
+        
+            <a href="?tag=technology" 
+               class="tag active"
+               data-tag="technology">
+                Technology (2)
+            </a>
+        
+        <a href="/blog" class="tag clear-filter">Clear Filters</a>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedTag = urlParams.get('tag');
+    
+    if (selectedTag) {
+        
+        document.querySelectorAll('.tag').forEach(tag => {
+            if (tag.dataset.tag === selectedTag) {
+                tag.classList.add('active');
+            }
+        });
+        
+        
+        document.querySelectorAll('.post-card').forEach(post => {
+            const postTags = post.dataset.tags.split(' ');
+            if (!postTags.includes(selectedTag)) {
+                post.style.display = 'none';
+            }
+        });
+    }
+});
+</script>
+        
+        <div class="post-list">
+            
+                <article class="post-card">
+    
+    <div class="post-image">
+        <img src="images/blog2_im1.jpg" alt="post 2">
+    </div>
+    
+    <div class="post-content">
+        <div class="post-meta">
+            <span>August 16, 2024</span>
+            <span>0 min read</span>
+        </div>
+        <h3><a href="/blog/second_post/">post 2</a></h3>
+        <p>trying something new</p>
+        <div>
+            
+            <span class="category-tag technology">Technology</span>
+            
+            <span class="category-tag politics">Politics</span>
+            
+        </div>
+    </div>
+</article>
+            
+                <article class="post-card">
+    
+    <div class="post-image">
+        <img src="images/blog1_im1.jpg" alt="The Future of Ethical Technology">
+    </div>
+    
+    <div class="post-content">
+        <div class="post-meta">
+            <span>August 16, 2023</span>
+            <span>1 min read</span>
+        </div>
+        <h3><a href="/blog/welcome-to-my-blog/">The Future of Ethical Technology</a></h3>
+        <p>Exploring how we can build technology that respects human dignity</p>
+        <div>
+            
+            <span class="category-tag technology">Technology</span>
+            
+            <span class="category-tag ethics">Ethics</span>
+            
+        </div>
+    </div>
+</article>
+            
+        </div>
+    </section>
+</div>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Created with ❤️ to share peace, truth, love, and joy</p>
+            <p>© 2025 - All rights reserved</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

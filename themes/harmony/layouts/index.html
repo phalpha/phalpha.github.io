@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="container">
+    <section class="intro">
+        <h1>{{ .Site.Params.introTitle }}</h1>
+        <p>{{ .Site.Params.introSubtitle }}</p>
+    </section>
+
+    {{ if .Site.Params.showAbout }}
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        {{ .Content }}
+    </section>
+    {{ end }}
+
+    {{ if .Site.Params.showProjects }}
+    <section id="projects" class="section projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <!-- This will be populated by the GitHub projects shortcode -->
+            {{ partial "github-projects.html" . }}
+        </div>
+    </section>
+    {{ end }}
+
+    {{ if .Site.Params.showGallery }}
+    <section id="gallery" class="section gallery">
+        <h2>Photo Gallery</h2>
+        {{ partial "gallery.html" . }}
+    </section>
+    {{ end }}
+
+    {{ if .Site.Params.showBlog }}
+    <section id="blog" class="section blog">
+        <h2>Recent Blog Posts</h2>
+        <div class="post-list">
+            {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+                {{ .Render "summary" }}
+            {{ end }}
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="/blog" class="button">View All Posts</a>
+        </div>
+    </section>
+    {{ end }}
+</div>
+{{ end }}

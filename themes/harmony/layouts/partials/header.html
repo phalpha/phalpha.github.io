@@ -1,0 +1,18 @@
+<header>
+    <div class="container">
+        <!-- Wrap the title in a centered container -->
+        <div class="title-container">
+            <a href="{{ .Site.BaseURL }}" class="site-title-link">
+                <h1 class="site-title">{{ .Site.Title }}</h1>
+            </a>
+            {{ with .Site.Params.subtitle }}<div class="site-subtitle">{{ . }}</div>{{ end }}
+        </div>
+        <nav>
+            <ul>
+                {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+</header>

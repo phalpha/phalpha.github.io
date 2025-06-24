@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your Name</title>
-    <link>https://phalpha.github.io/</link>
-    <description>Recent content on Your Name</description>
+    <title>peace, truth, love, joy</title>
+    <link>http://localhost:52160/</link>
+    <description>Recent content on peace, truth, love, joy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://phalpha.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Aug 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:52160/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About Me</title>
-      <link>https://phalpha.github.io/about/</link>
-      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://phalpha.github.io/about/</guid>
-      <description>&lt;p&gt;[Your bio here&amp;hellip;]&lt;/p&gt;</description>
+      <title>My Fourth Project</title>
+      <link>http://localhost:52160/projects/project4/</link>
+      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52160/projects/project4/</guid>
+      <description>A brief description of my project</description>
     </item>
     <item>
-      <title></title>
-      <link>https://phalpha.github.io/gallery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://phalpha.github.io/gallery/</guid>
-      <description></description>
+      <title>My Project</title>
+      <link>http://localhost:52160/projects/project1/</link>
+      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52160/projects/project1/</guid>
+      <description>Brief description of my project</description>
     </item>
     <item>
-      <title></title>
-      <link>https://phalpha.github.io/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://phalpha.github.io/projects/</guid>
-      <description></description>
+      <title>My Second Project</title>
+      <link>http://localhost:52160/projects/project2/</link>
+      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52160/projects/project2/</guid>
+      <description>A brief description of my project</description>
+    </item>
+    <item>
+      <title>My Third Project</title>
+      <link>http://localhost:52160/projects/project3/</link>
+      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52160/projects/project3/</guid>
+      <description>A brief description of my project</description>
+    </item>
+    <item>
+      <title>The Future of Ethical Technology</title>
+      <link>http://localhost:52160/blog/second_blog/</link>
+      <pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52160/blog/second_blog/</guid>
+      <description>Exploring how we can build technology that respects human dignity</description>
     </item>
   </channel>
 </rss>

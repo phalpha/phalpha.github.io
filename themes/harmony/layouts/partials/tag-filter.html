@@ -1,0 +1,38 @@
+<div class="tag-filter">
+    <h3>Filter by Topic</h3>
+    <div class="tag-cloud">
+        {{ range .Site.Taxonomies.tags }}
+            <a href="?tag={{ .Page.Title | urlize }}" 
+               class="tag {{ if eq $.Page.Title .Page.Title }}active{{ end }}"
+               data-tag="{{ .Page.Title | urlize }}">
+                {{ .Page.Title }} ({{ .Count }})
+            </a>
+        {{ end }}
+        <a href="/blog" class="tag clear-filter">Clear Filters</a>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get tag from URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedTag = urlParams.get('tag');
+    
+    if (selectedTag) {
+        // Highlight selected tag
+        document.querySelectorAll('.tag').forEach(tag => {
+            if (tag.dataset.tag === selectedTag) {
+                tag.classList.add('active');
+            }
+        });
+        
+        // Filter posts
+        document.querySelectorAll('.post-card').forEach(post => {
+            const postTags = post.dataset.tags.split(' ');
+            if (!postTags.includes(selectedTag)) {
+                post.style.display = 'none';
+            }
+        });
+    }
+});
+</script>
