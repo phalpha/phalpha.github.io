@@ -1,0 +1,8 @@
+<details class="collapsible-section">
+  <summary class="section-title">
+    <h2>{{ .Get 0 }}</h2>
+  </summary>
+  <div class="section-content">
+    {{ .Inner | .Page.RenderString }}
+  </div>
+</details>

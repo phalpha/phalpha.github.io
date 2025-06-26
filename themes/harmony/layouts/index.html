@@ -2,7 +2,10 @@
 <div class="container">
     <section class="intro">
         <h1>{{ .Site.Params.introTitle }}</h1>
-        <p>{{ .Site.Params.introSubtitle }}</p>
+        <h2>{{ .Site.Params.introSubtitle}}</h2>
+        <br>
+        <p>{{ .Site.Params.introSubtitle2}}</p>
+       <!-- <img src="/images/blog/blog1_im1.jpg" alt="abc"> -->
     </section>
 
     {{ if .Site.Params.showAbout }}
@@ -22,12 +25,7 @@
     </section>
     {{ end }}
 
-    {{ if .Site.Params.showGallery }}
-    <section id="gallery" class="section gallery">
-        <h2>Photo Gallery</h2>
-        {{ partial "gallery.html" . }}
-    </section>
-    {{ end }}
+
 
     {{ if .Site.Params.showBlog }}
     <section id="blog" class="section blog">
@@ -39,6 +37,28 @@
         </div>
         <div style="text-align: center; margin-top: 2rem;">
             <a href="/blog" class="button">View All Posts</a>
+        </div>
+    </section>
+    {{ end }}
+
+     <!-- Add Thoughts Section Here -->
+    {{ if .Site.Params.showThoughts }}
+    <section id="thoughts" class="section thoughts">
+        <h2>Recent Thoughts</h2>
+        <div class="thoughts-preview">
+            {{ range first 3 (where .Site.RegularPages "Section" "thoughts").ByDate.Reverse }}
+                <div class="thought-item">
+                    <div class="thought-content">
+                        {{ .Content | truncate 150 }}
+                    </div>
+                    <div class="thought-meta">
+                        <time datetime="{{ .Date }}">{{ .Date | time.Format ":date_medium" }}</time>
+                    </div>
+                </div>
+            {{ end }}
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="/thoughts/" class="button">View All Thoughts</a>
         </div>
     </section>
     {{ end }}

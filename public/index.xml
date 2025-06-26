@@ -1,47 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>peace, truth, love, joy</title>
-    <link>http://localhost:52160/</link>
-    <description>Recent content on peace, truth, love, joy</description>
+    <title>me, you, and the universe</title>
+    <link>http://localhost:56279/</link>
+    <description>Recent content on me, you, and the universe</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:52160/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:56279/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Fourth Project</title>
-      <link>http://localhost:52160/projects/project4/</link>
+      <link>http://localhost:56279/projects/project4/</link>
       <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52160/projects/project4/</guid>
-      <description>A brief description of my project</description>
-    </item>
-    <item>
-      <title>My Project</title>
-      <link>http://localhost:52160/projects/project1/</link>
-      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52160/projects/project1/</guid>
-      <description>Brief description of my project</description>
-    </item>
-    <item>
-      <title>My Second Project</title>
-      <link>http://localhost:52160/projects/project2/</link>
-      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52160/projects/project2/</guid>
+      <guid>http://localhost:56279/projects/project4/</guid>
       <description>A brief description of my project</description>
     </item>
     <item>
       <title>My Third Project</title>
-      <link>http://localhost:52160/projects/project3/</link>
+      <link>http://localhost:56279/projects/project3/</link>
       <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52160/projects/project3/</guid>
+      <guid>http://localhost:56279/projects/project3/</guid>
       <description>A brief description of my project</description>
     </item>
     <item>
       <title>The Future of Ethical Technology</title>
-      <link>http://localhost:52160/blog/second_blog/</link>
+      <link>http://localhost:56279/blog/second_blog/</link>
       <pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52160/blog/second_blog/</guid>
+      <guid>http://localhost:56279/blog/second_blog/</guid>
       <description>Exploring how we can build technology that respects human dignity</description>
+    </item>
+    <item>
+      <title>Post 1</title>
+      <link>http://localhost:56279/blog/first_blog/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56279/blog/first_blog/</guid>
+      <description>trying it out</description>
+    </item>
+    <item>
+      <title>Door Authorization Control Apparatus</title>
+      <link>http://localhost:56279/projects/project2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56279/projects/project2/</guid>
+      <description>License Plate detection with a microcontroller</description>
+    </item>
+    <item>
+      <title>Indoor Positioning System</title>
+      <link>http://localhost:56279/projects/project1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56279/projects/project1/</guid>
+      <description>Coordinating Cameras and Computer Vision for Positioning</description>
     </item>
   </channel>
 </rss>

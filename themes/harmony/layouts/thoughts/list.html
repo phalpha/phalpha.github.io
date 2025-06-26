@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="container">
+  <section class="section thoughts">
+    <div class="thoughts-board">
+      <header class="board-header">
+        <h1>{{ .Title }}</h1>
+        <div class="intro">{{ .Content }}</div>
+      </header>
+
+      <div class="thoughts-grid">
+        {{ range .Pages.ByDate.Reverse }}
+        <article class="thought-card">
+          <div class="thought-card-content">
+            {{ .Content }}
+          </div>
+          <footer class="thought-card-footer">
+            <time datetime="{{ .Date }}">{{ .Date | time.Format ":date_medium" }}</time>
+          </footer>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}

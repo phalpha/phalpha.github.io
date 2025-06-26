@@ -1,46 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on peace, truth, love, joy</title>
-    <link>http://localhost:52160/tags/</link>
-    <description>Recent content in Tags on peace, truth, love, joy</description>
+    <title>Tags on me, you, and the universe</title>
+    <link>http://localhost:56279/tags/</link>
+    <description>Recent content in Tags on me, you, and the universe</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:52160/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:56279/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data</title>
-      <link>http://localhost:52160/tags/data/</link>
+      <link>http://localhost:56279/tags/data/</link>
       <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52160/tags/data/</guid>
+      <guid>http://localhost:56279/tags/data/</guid>
       <description></description>
     </item>
     <item>
-      <title>Hugo</title>
-      <link>http://localhost:52160/tags/hugo/</link>
+      <title>History</title>
+      <link>http://localhost:56279/tags/history/</link>
       <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52160/tags/hugo/</guid>
+      <guid>http://localhost:56279/tags/history/</guid>
       <description></description>
     </item>
     <item>
-      <title>Web</title>
-      <link>http://localhost:52160/tags/web/</link>
+      <title>Mathematics</title>
+      <link>http://localhost:56279/tags/mathematics/</link>
       <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52160/tags/web/</guid>
+      <guid>http://localhost:56279/tags/mathematics/</guid>
       <description></description>
     </item>
     <item>
-      <title>Ethics</title>
-      <link>http://localhost:52160/tags/ethics/</link>
-      <pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52160/tags/ethics/</guid>
+      <title>Science</title>
+      <link>http://localhost:56279/tags/science/</link>
+      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56279/tags/science/</guid>
       <description></description>
     </item>
     <item>
       <title>Technology</title>
-      <link>http://localhost:52160/tags/technology/</link>
+      <link>http://localhost:56279/tags/technology/</link>
+      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:56279/tags/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ethics</title>
+      <link>http://localhost:56279/tags/ethics/</link>
       <pubDate>Wed, 16 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52160/tags/technology/</guid>
+      <guid>http://localhost:56279/tags/ethics/</guid>
       <description></description>
     </item>
   </channel>

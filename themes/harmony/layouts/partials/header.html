@@ -1,6 +1,5 @@
 <header>
     <div class="container">
-        <!-- Wrap the title in a centered container -->
         <div class="title-container">
             <a href="{{ .Site.BaseURL }}" class="site-title-link">
                 <h1 class="site-title">{{ .Site.Title }}</h1>
@@ -10,7 +9,9 @@
         <nav>
             <ul>
                 {{ range .Site.Menus.main }}
+                    {{ if ne .Name "Gallery" }}
                     <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+                    {{ end }}
                 {{ end }}
             </ul>
         </nav>

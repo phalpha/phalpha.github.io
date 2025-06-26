@@ -1,8 +1,52 @@
 <footer>
     <div class="container">
         <div class="footer-content">
-            <p>Created with ❤️ to share peace, truth, love, and joy</p>
-            <p>© {{ now.Format "2006" }} - All rights reserved</p>
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
         </div>
     </div>
+      <!-- Lightbox container -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        // Open lightbox
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        // Close lightbox
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        // Close when clicking outside image
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        // Close with ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</footer>
 </footer>

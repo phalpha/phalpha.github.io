@@ -1,18 +1,22 @@
 baseURL = 'https://phalpha.github.io'
 languageCode = 'en-us'
-title = 'peace, truth, love, joy'
+title = 'me, you, and the universe'
 theme = 'harmony'
 
 # Theme parameters
 [params]
-  subtitle = "A public space for sharing my personal reflections!"
+  subtitle = "introspections and extrospections, meditations and expositions"
   introTitle = "Welcome to my website!"
-  introSubtitle = "My (government) name is Poojit Hegde, and I am an aspiring engineer, scientist, and artist. This is a warm and creative corner of the internet where I share my journey, projects, and thoughts on topics that matter to me."
+  introSubtitle = "My name is Poojit, and I am an aspiring scientist, artist, and engineer."
+  introSubtitle2 = "This is a place where I hope to connect my 'digital personal' to the 'digital public' - a warm and creative corner of the internet where I share stories from my life journey, projects I have worked on, and thoughts on topics that matter to me. Check out the 'About' section to learn a little bit more about who I am, check out the 'Blog' page to read more long-form articles, and check out the 'Thoughts' page for some words I am moving with right now."
+  coverImage = "images/blog1_im1.jpg"
   showFullHomepage = false  # Set to false for minimal homepage
  # showAbout = true
   #showProjects = true
   #showGallery = true
   #showBlog = true
+  #showThoughts = true
+  math = true
 
 # Menu configuration
 [menu]
@@ -26,14 +30,15 @@ theme = 'harmony'
     url = "/projects/"  # Changed from /#projects
     weight = 2
   
-  [[menu.main]]
-    name = "Gallery"
-    url = "/gallery/"  # Changed from /#gallery
-    weight = 3
   
   [[menu.main]]
     name = "Blog"
     url = "/blog/"
+    weight = 3
+
+ [[menu.main]]
+    name = "Thoughts"
+    url = "/thoughts/"
     weight = 4
 
 # Output formats for RSS
@@ -54,12 +59,23 @@ theme = 'harmony'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true  # Allows raw HTML if needed
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
       
   [markup.highlight]
     style = "github"
     lineNos = true
     lineNumbersInTable = false
     noClasses = false
+
+
+    
+
+
 
 
 

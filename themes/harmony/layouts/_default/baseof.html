@@ -20,5 +20,8 @@
     </main>
 
     {{ partial "footer.html" . }}
+    {{ if .Param "math" }}
+    {{ partialCached "math.html" . }}
+  {{ end }}
 </body>
 </html>

@@ -1,8 +1,8 @@
 ---
-title: "My Project"
-date: 2023-08-20
-tags: ["data"]
-summary: "Brief description of my project"
+title: "Indoor Positioning System"
+date: 
+tags: 
+summary: "Coordinating Cameras and Computer Vision for Positioning"
 image: "images/projects/my-project.jpg" # Optional featured image
 ---
 

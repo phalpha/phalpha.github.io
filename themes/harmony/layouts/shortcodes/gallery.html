@@ -1,1 +1,18 @@
-{{ partial "gallery.html" . }}
+<div class="gallery-section">
+    <div class="gallery-grid">
+        {{ $galleryPath := "images/gallery" }}
+        {{ $galleryImages := resources.Match (printf "%s/*" $galleryPath) }}
+        
+        {{ range $img := $galleryImages }}
+            {{ if eq $img.ResourceType "image" }} <!-- Ensure it's an image -->
+                {{ $thumbnail := $img.Fill "400x300 Center" }}
+                {{ $filename := path.Base $img.Name }}
+                {{ $cleanName := humanize (strings.TrimSuffix (path.Ext $filename) $filename) }}
+                
+                <a href="{{ $img.RelPermalink }}" class="gallery-item">
+                    <img src="{{ $thumbnail.RelPermalink }}" alt="{{ $cleanName }}">
+                </a>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>

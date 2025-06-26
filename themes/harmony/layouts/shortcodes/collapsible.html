@@ -1,0 +1,10 @@
+<details class="collapsible-section">
+  <summary class="section-title">
+    <h2>{{ .Get 0 }}</h2>
+  </summary>
+  <div class="section-content">
+    {{ if .Inner }}
+      {{ .Inner | .Page.RenderString (dict "display" "block") }}
+    {{ end }}
+  </div>
+</details>

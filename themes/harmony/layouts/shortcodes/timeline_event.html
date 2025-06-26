@@ -1,0 +1,44 @@
+{{ $date := .Get "date" }}
+{{ $title := .Get "title" }}
+{{ $image := .Get "image" }}
+
+<div class="timeline-event">
+    <div class="timeline-date">{{ $date }}</div>
+    
+    <!-- Text content on one side -->
+    <div class="timeline-text-container">
+        <div class="timeline-content timeline-text">
+            <h3 class="timeline-event-title">{{ $title }}</h3>
+            <div class="timeline-description">
+                {{ .Inner | .Page.RenderString }}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Image on the opposite side -->
+    <div class="timeline-image-container">
+        {{ if $image }}
+            {{ $imagePath := $image }}
+            {{ $imageResource := resources.Get $imagePath }}
+            {{ if $imageResource }}
+                {{ $thumbnail := $imageResource.Fill "500x350 Center" }}
+                <div class="timeline-content timeline-image">
+                    <img src="{{ $thumbnail.RelPermalink }}" alt="{{ $title }}">
+                </div>
+            {{ else }}
+                <div class="timeline-content timeline-image">
+                    <img src="{{ $imagePath | relURL }}" alt="{{ $title }}">
+                </div>
+            {{ end }}
+        {{ else }}
+            <div class="timeline-content timeline-image placeholder">
+                <div class="placeholder-content">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                    </svg>
+                    <p>No image available</p>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+</div>

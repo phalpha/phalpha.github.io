@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=52160&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56279&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tags | peace, truth, love, joy</title>
+    <title>Tags | me, you, and the universe</title>
     
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     
     
     
-    <link rel="stylesheet" href="http://localhost:52160/css/main.min.4fe4ee38f4360d89bdf1bc5579653610047d8a448208f103bb0bea1da11c5b82.css">
+    <link rel="stylesheet" href="http://localhost:56279/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
 </head>
 <body>
     <header>
     <div class="container">
-        
         <div class="title-container">
-            <a href="http://localhost:52160/" class="site-title-link">
-                <h1 class="site-title">peace, truth, love, joy</h1>
+            <a href="http://localhost:56279/" class="site-title-link">
+                <h1 class="site-title">me, you, and the universe</h1>
             </a>
-            <div class="site-subtitle">A public space for sharing my personal reflections!</div>
+            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
         </div>
         <nav>
             <ul>
                 
+                    
                     <li><a href="/about/">About</a></li>
+                    
                 
+                    
                     <li><a href="/projects/">Projects</a></li>
+                    
                 
-                    <li><a href="/gallery/">Gallery</a></li>
-                
+                    
                     <li><a href="/blog/">Blog</a></li>
+                    
+                
+                    
+                    <li><a href="/thoughts/">Thoughts</a></li>
+                    
                 
             </ul>
         </nav>
@@ -57,25 +64,31 @@
             <a href="?tag=ethics" 
                class="tag "
                data-tag="ethics">
-                Ethics (1)
+                Ethics (2)
             </a>
         
-            <a href="?tag=hugo" 
+            <a href="?tag=history" 
                class="tag "
-               data-tag="hugo">
-                Hugo (3)
+               data-tag="history">
+                History (1)
+            </a>
+        
+            <a href="?tag=mathematics" 
+               class="tag "
+               data-tag="mathematics">
+                Mathematics (1)
+            </a>
+        
+            <a href="?tag=science" 
+               class="tag "
+               data-tag="science">
+                Science (2)
             </a>
         
             <a href="?tag=technology" 
                class="tag "
                data-tag="technology">
-                Technology (1)
-            </a>
-        
-            <a href="?tag=web" 
-               class="tag "
-               data-tag="web">
-                Web (3)
+                Technology (2)
             </a>
         
         <a href="/blog" class="tag clear-filter">Clear Filters</a>
@@ -119,6 +132,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
                 
             
+                
+            
         </div>
     </section>
 </div>
@@ -128,10 +143,68 @@ document.addEventListener('DOMContentLoaded', function() {
     <footer>
     <div class="container">
         <div class="footer-content">
-            <p>Created with ❤️ to share peace, truth, love, and joy</p>
-            <p>© 2025 - All rights reserved</p>
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
         </div>
     </div>
+      
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
 </footer>
+</footer>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
 </body>
 </html>
