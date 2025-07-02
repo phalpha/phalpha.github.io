@@ -2,90 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:55830/thoughts/</loc>
+    <loc>http://localhost:52985/thoughts/</loc>
     <lastmod>2025-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/</loc>
+    <loc>http://localhost:52985/</loc>
     <lastmod>2025-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/blog/</loc>
+    <loc>http://localhost:52985/blog/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/blog/second_blog/</loc>
+    <loc>http://localhost:52985/blog/second_blog/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/tags/health/</loc>
+    <loc>http://localhost:52985/tags/health/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/tags/history/</loc>
+    <loc>http://localhost:52985/tags/history/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/tags/science/</loc>
+    <loc>http://localhost:52985/tags/science/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/tags/</loc>
+    <loc>http://localhost:52985/tags/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/tags/philosophy/</loc>
+    <loc>http://localhost:52985/tags/philosophy/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/blog/third_blog/</loc>
+    <loc>http://localhost:52985/blog/third_blog/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/about/</loc>
+    <loc>http://localhost:52985/about/</loc>
     <lastmod>2023-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/blog/first_blog/</loc>
+    <loc>http://localhost:52985/blog/first_blog/</loc>
     <lastmod>2023-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/projects/project10/</loc>
+    <loc>http://localhost:52985/projects/project10/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project18/</loc>
+    <loc>http://localhost:52985/projects/project18/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project14/</loc>
+    <loc>http://localhost:52985/projects/project14/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project17/</loc>
+    <loc>http://localhost:52985/projects/project17/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project11/</loc>
+    <loc>http://localhost:52985/projects/project11/</loc>
   </url><url>
-    <loc>http://localhost:55830/tags/data/</loc>
+    <loc>http://localhost:52985/projects/project19/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project19/</loc>
+    <loc>http://localhost:52985/projects/project2/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project2/</loc>
+    <loc>http://localhost:52985/projects/project5/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project5/</loc>
+    <loc>http://localhost:52985/projects/project4/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project4/</loc>
+    <loc>http://localhost:52985/projects/project3/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project3/</loc>
+    <loc>http://localhost:52985/projects/project12/</loc>
   </url><url>
-    <loc>http://localhost:55830/tags/ethics/</loc>
+    <loc>http://localhost:52985/projects/project21/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project12/</loc>
+    <loc>http://localhost:52985/projects/project7/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project21/</loc>
+    <loc>http://localhost:52985/projects/project1/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project7/</loc>
+    <loc>http://localhost:52985/projects/project9/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project1/</loc>
+    <loc>http://localhost:52985/projects/project20/</loc>
   </url><url>
-    <loc>http://localhost:55830/tags/mathematics/</loc>
+    <loc>http://localhost:52985/projects/project13/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project9/</loc>
+    <loc>http://localhost:52985/projects/project15/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project20/</loc>
+    <loc>http://localhost:52985/projects/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project13/</loc>
+    <loc>http://localhost:52985/projects/project16/</loc>
   </url><url>
-    <loc>http://localhost:55830/projects/project15/</loc>
-  </url><url>
-    <loc>http://localhost:55830/projects/</loc>
-  </url><url>
-    <loc>http://localhost:55830/projects/project16/</loc>
-  </url><url>
-    <loc>http://localhost:55830/tags/technology/</loc>
-  </url><url>
-    <loc>http://localhost:55830/projects/project8/</loc>
+    <loc>http://localhost:52985/projects/project8/</loc>
   </url>
 </urlset>

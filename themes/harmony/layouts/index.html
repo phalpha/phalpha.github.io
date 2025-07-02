@@ -2,19 +2,26 @@
 <div class="container">
     <section class="intro">
         <h1>{{ .Site.Params.introTitle }}</h1>
+
+       {{ partial "fractal-forest.html" . }}
+        
         <h2>{{ .Site.Params.introSubtitle}}</h2>
-        <br>
+        
+
+
         <p>{{ .Site.Params.introSubtitle2}}</p>
+
+                <!-- Add the fractal forest animation here -->
+
+        
        <!-- <img src="/images/blog/blog1_im1.jpg" alt="abc"> -->
     </section>
-
     {{ if .Site.Params.showAbout }}
     <section id="about" class="section about">
         <h2>About Me</h2>
         {{ .Content }}
     </section>
     {{ end }}
-
     {{ if .Site.Params.showProjects }}
     <section id="projects" class="section projects">
         <h2>My Projects</h2>
@@ -24,9 +31,6 @@
         </div>
     </section>
     {{ end }}
-
-
-
     {{ if .Site.Params.showBlog }}
     <section id="blog" class="section blog">
         <h2>Recent Blog Posts</h2>
@@ -40,7 +44,6 @@
         </div>
     </section>
     {{ end }}
-
      <!-- Add Thoughts Section Here -->
     {{ if .Site.Params.showThoughts }}
     <section id="thoughts" class="section thoughts">

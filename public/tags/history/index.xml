@@ -2,18 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>History on me, you, and the universe</title>
-    <link>http://localhost:56279/tags/history/</link>
+    <link>http://localhost:52985/tags/history/</link>
     <description>Recent content in History on me, you, and the universe</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Aug 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:56279/tags/history/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:52985/tags/history/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My Second Project</title>
-      <link>http://localhost:56279/projects/project2/</link>
-      <pubDate>Sun, 20 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:56279/projects/project2/</guid>
-      <description>A brief description of my project</description>
+      <title>Do Names Matter? Health and Diagnosis of Disease</title>
+      <link>http://localhost:52985/blog/second_blog/</link>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52985/blog/second_blog/</guid>
+      <description>what is the story of myalgic encephaloymelitis?</description>
+    </item>
+    <item>
+      <title>Some Mathematical Poetry</title>
+      <link>http://localhost:52985/blog/third_blog/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52985/blog/third_blog/</guid>
+      <description>math and poetry? together?</description>
+    </item>
+    <item>
+      <title>The Nature of the Scientific Debate around Human Nature: Lewontin, Owens, Spandrels, and Sociobiology </title>
+      <link>http://localhost:52985/blog/first_blog/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52985/blog/first_blog/</guid>
+      <description>a historical and philosophical dive into what it means to be human</description>
     </item>
   </channel>
 </rss>

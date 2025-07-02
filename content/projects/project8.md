@@ -1,8 +1,8 @@
 ---
-title: "War, the United States, and Stanford"
+title: "A Recon on War"
 date: 
 tags: 
-summary: "A reconnaissance of defense-funding relationships"
+summary: "mapping defense relationships, from the US to Stanford"
 ---
 
 **"Recon on War" - Data Visualization Project**

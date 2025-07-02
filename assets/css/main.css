@@ -1408,3 +1408,23 @@ img[src]:not([src=""]) {
     height: 7px;
   }
 }
+
+/* Fractal Forest Integration */
+.intro .fractal-forest-container {
+    margin: 2rem auto;
+    max-width: 100%;
+}
+
+/* Ensure the animation doesn't interfere with text flow */
+.intro h2 + .fractal-forest-container {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Make it responsive */
+@media (max-width: 600px) {
+    .fractal-forest-container canvas {
+        max-width: 100%;
+        height: auto;
+    }
+}

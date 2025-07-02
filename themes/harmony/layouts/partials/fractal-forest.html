@@ -1,58 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="generator" content="Hugo 0.147.9"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=52985&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>me, you, and the universe</title>
-    
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    
-    
-    <link rel="stylesheet" href="http://localhost:52985/css/main.min.912209eaeb078d73268da50051abed243bf6f17186c6c074e6539e0ee7f23783.css">
-</head>
-<body>
-    <header>
-    <div class="container">
-        <div class="title-container">
-            <a href="http://localhost:52985/" class="site-title-link">
-                <h1 class="site-title">me, you, and the universe</h1>
-            </a>
-            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
-        </div>
-        <nav>
-            <ul>
-                
-                    
-                    <li><a href="/about/">About</a></li>
-                    
-                
-                    
-                    <li><a href="/projects/">Projects</a></li>
-                    
-                
-                    
-                    <li><a href="/blog/">Blog</a></li>
-                    
-                
-                    
-                    <li><a href="/thoughts/">Thoughts</a></li>
-                    
-                
-            </ul>
-        </nav>
-    </div>
-</header>
-
-    <main>
-        
-<div class="container">
-    <section class="intro">
-        <h1>Welcome to my website!</h1>
-
-       <div class="fractal-forest-container">
+<div class="fractal-forest-container">
     <div id="fractal-forest"></div>
 </div>
 
@@ -61,15 +7,15 @@
     let trees = [];
     let nextTreeTime = 0;
     let treeSpacing = 120;
-    let maxTrees = 15; 
+    let maxTrees = 15; // Reduced for homepage
     
     function setup() {
-        let canvas = createCanvas(800, 400); 
+        let canvas = createCanvas(800, 400); // Smaller for homepage
         canvas.parent('fractal-forest');
     }
     
     function draw() {
-        
+        // Create gradient background
         for (let i = 0; i <= height; i++) {
             let inter = map(i, 0, height, 0, 1);
             let c = lerpColor(color(10, 15, 35), color(20, 35, 60), inter);
@@ -77,23 +23,23 @@
             line(0, i, width, i);
         }
         
-        
+        // Add ground
         fill(15, 25, 20);
         noStroke();
         rect(0, height - 30, width, 30);
         
-        
+        // Add new tree periodically
         if (frameCount >= nextTreeTime && trees.length < maxTrees) {
             addNewTree();
             nextTreeTime = frameCount + treeSpacing;
         }
         
-        
+        // Draw all existing trees
         for (let tree of trees) {
             drawTree(tree);
         }
         
-        
+        // Add some atmospheric particles
         drawParticles();
     }
     
@@ -102,9 +48,9 @@
             x: random(60, width - 60),
             y: height - 30,
             angle: -PI/2,
-            length: random(60, 90), 
+            length: random(60, 90), // Smaller trees for homepage
             depth: 0,
-            maxDepth: floor(random(6, 8)), 
+            maxDepth: floor(random(6, 8)), // Less complex for performance
             age: 0,
             maxAge: 150,
             branches: []
@@ -232,96 +178,7 @@
 
 @media (max-width: 768px) {
     .fractal-forest-container {
-        margin: 1rem -1rem;  
+        margin: 1rem -1rem; /* Extend to edges on mobile */
     }
 }
 </style>
-        
-        <h2>My name is Poojit, and I am an aspiring scientist, artist, and engineer.</h2>
-        
-
-
-        <p>This is a place where I hope to connect my &#39;digital personal&#39; to the &#39;digital public&#39; - a warm and creative corner of the internet where I share stories from my life journey, projects I have worked on, and thoughts on topics that matter to me. Check out the &#39;About&#39; section to learn a little bit more about who I am, check out the &#39;Blog&#39; page to read more long-form articles, and check out the &#39;Thoughts&#39; page for some words I am moving with right now.</p>
-
-                
-
-        
-       
-    </section>
-    
-    
-    
-     
-    
-</div>
-
-    </main>
-
-    <footer>
-    <div class="container">
-        <div class="footer-content">
-            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
-        </div>
-    </div>
-      
-    <div id="lightbox" class="lightbox">
-        <span class="close-btn">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div class="caption"></div>
-    </div>
-    
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const caption = document.querySelector('.lightbox .caption');
-        const closeBtn = document.querySelector('.close-btn');
-        
-        
-        document.querySelectorAll('.gallery-item').forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.preventDefault();
-                lightbox.style.display = 'block';
-                lightboxImg.src = this.href;
-                caption.textContent = this.querySelector('img').alt;
-            });
-        });
-        
-        
-        closeBtn.addEventListener('click', function() {
-            lightbox.style.display = 'none';
-        });
-        
-        
-        lightbox.addEventListener('click', function(e) {
-            if (e.target === lightbox) {
-                lightbox.style.display = 'none';
-            }
-        });
-        
-        
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && lightbox.style.display === 'block') {
-                lightbox.style.display = 'none';
-            }
-        });
-    });
-    </script>
-</footer>
-</footer>
-    
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-<script>
-  MathJax = {
-    tex: {
-      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
-      inlineMath: [['\\(', '\\)']]                  
-    },
-    loader:{
-      load: ['ui/safe']
-    },
-  };
-</script>
-  
-</body>
-</html>
