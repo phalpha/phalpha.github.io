@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56279&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55830&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Third Project | me, you, and the universe</title>
+    <title>Essential Tremor Measurement and Analysis | me, you, and the universe</title>
     
     
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     
     
     
-    <link rel="stylesheet" href="http://localhost:56279/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
+    <link rel="stylesheet" href="http://localhost:55830/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
 </head>
 <body>
     <header>
     <div class="container">
         <div class="title-container">
-            <a href="http://localhost:56279/" class="site-title-link">
+            <a href="http://localhost:55830/" class="site-title-link">
                 <h1 class="site-title">me, you, and the universe</h1>
             </a>
             <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
@@ -51,15 +51,9 @@
     <div class="container">
         <article class="project">
             <header>
-                <h1>My Third Project</h1>
+                <h1>Essential Tremor Measurement and Analysis</h1>
                 <div class="project-meta">
-                    <span class="date">August 20, 2023</span>
                     
-                    <div class="tags">
-                        
-                        <span class="tag">mathematics</span>
-                        
-                    </div>
                     
                 </div>
             </header>
@@ -67,7 +61,64 @@
             
 
             <div class="project-content">
-                <p>Project details here&hellip;</p>
+                <h2 id="project-overview">Project Overview</h2>
+<p>This project developed a computer sensor network to quantitatively measure and analyze hand tremors in patients with essential tremor, a neurological disorder affecting millions of people worldwide. The system represents a significant advancement over current qualitative assessment methods used in clinical practice.</p>
+<h2 id="technical-implementation">Technical Implementation</h2>
+<h3 id="hardware-components">Hardware Components</h3>
+<ul>
+<li><strong>Dual ZX Distance and Gesture Sensors</strong>: Infrared-based sensors measuring 3D hand position</li>
+<li><strong>Arduino Uno</strong>: Microcontroller for data collection and processing</li>
+<li><strong>Raspberry Pi 3</strong>: Primary computing unit for data analysis</li>
+<li><strong>TCA9548A I2C Multiplexer</strong>: Enables communication between multiple sensors</li>
+<li><strong>Custom sensor mounting system</strong>: Perpendicular arrangement for comprehensive 3D tracking</li>
+</ul>
+<h3 id="software-architecture">Software Architecture</h3>
+<p>The system utilizes a multi-layered software approach:</p>
+<ul>
+<li><strong>C programming</strong> on Arduino for real-time sensor data acquisition</li>
+<li><strong>Python scripts</strong> on Raspberry Pi for data logging and analysis</li>
+<li><strong>I2C protocol</strong> for efficient inter-device communication</li>
+<li><strong>Matplotlib visualization</strong> for comprehensive data presentation</li>
+</ul>
+<h2 id="key-features">Key Features</h2>
+<h3 id="measurement-capabilities">Measurement Capabilities</h3>
+<ul>
+<li><strong>Three-dimensional tracking</strong>: Complete x, y, z coordinate mapping</li>
+<li><strong>High-resolution data</strong>: 1200 samples per second acquisition rate</li>
+<li><strong>12-inch vertical range</strong> and 6-inch horizontal sensing area</li>
+<li><strong>Real-time processing</strong> with moving average calculations</li>
+</ul>
+<h3 id="analysis-functions">Analysis Functions</h3>
+<ul>
+<li>Moving statistical calculations (average, standard deviation, variance, RMS)</li>
+<li>Deviation analysis comparing actual vs. theoretical hand movements</li>
+<li>Multi-dimensional visualization including parametric plots</li>
+<li>Quantitative tremor assessment replacing subjective rating scales</li>
+</ul>
+<h2 id="testing-and-validation">Testing and Validation</h2>
+<p>The system underwent comprehensive testing with a control subject performing five standardized movements:</p>
+<ol>
+<li><strong>Vertical Motion</strong>: Up-down hand movements</li>
+<li><strong>Horizontal Motion</strong>: Left-right linear movements</li>
+<li><strong>Circular Motion</strong>: Clockwise tracing patterns</li>
+<li><strong>Wrist Tilting</strong>: Palm orientation changes</li>
+<li><strong>Steady Hold</strong>: Static position maintenance</li>
+</ol>
+<h3 id="results-summary">Results Summary</h3>
+<ul>
+<li>Average deviation measurements ranged from 0.114 to 0.239 inches</li>
+<li>Successfully captured natural hand variability in healthy subjects</li>
+<li>Established baseline data for future tremor patient comparisons</li>
+<li>Demonstrated quantitative measurement capabilities</li>
+</ul>
+<h2 id="conference-submission">Conference Submission</h2>
+<ul>
+<li>Accepted for submission at the 2017 MIT IEEE Undergraduate Research Conference</li>
+<li>Paper published in the <a href="https://ieeexplore.ieee.org/document/8284206/">IEEE Xplore Digital Library</a></li>
+</ul>
+<hr>
+<p><em>I worked on this project at NJ Governor&rsquo;s School for Engineering and Technology.</em></p>
+<p><em>One interesting aspect of this project as that our mentor was for some reason obsessed with the programming language APL, which stands for &ldquo;A Programming Language&rdquo;. If you haven&rsquo;t heard of it, look it up. Quite an interesting choice for a project about interfacing to an Arduino and measuring movement. His vision was to use APL out of artistic creativity and as a challenge. Well we quickly assessed that this was not a challenge the rest of us were particularly intersted to embark upon, and we chose to move in the more walked-on path.</em></p>
 
             </div>
 

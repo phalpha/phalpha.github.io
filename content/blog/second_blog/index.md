@@ -1,33 +1,49 @@
 ---
-title: "The Future of Ethical Technology"
-date: 2023-08-16
-tags: ["technology", "ethics"]
-categories: ["Technology", "Ethics"]
+title: "Do Names Matter? Health and Diagnosis of Disease"
+date: 2025-02-15
+tags: ["science", "history", "health"]
+categories: ["Science", "History", "Health"]
 image: "images/blog2_im1.jpg"  # Path relative to bundle
-summary: "Exploring how we can build technology that respects human dignity"
+summary: "what is the story of myalgic encephaloymelitis?"
 draft: false
 ---
 
-## Introduction
+## The Incident at Incline Village 
 
-Exploring how we can build technology that respects human dignity and promotes wellbeing...
+Situated right on the banks of Lake Tahoe, Incline Village is a town without too much tumult. Home to some of the most incredible mountain resorts in the area, its affluent residents and visitors alike sprawl across the relaxing beaches in the summer and hit the nearby ski slopes during the wintertime. 
 
-![Ethical Framework](images/framework.jpg)
-*Figure 1: Framework for ethical technology development*
+The winter of 1984-1985 brought more than just snow to the idyllic Incline Village. One at a time, people fell sick with a mysterious  illness, until it felt like all at once, over 200 of the town’s few thousand residents were unwell. The details of the complaints were diverse, but many followed a common theme - an upper respiratory infection accompanied by crushing exhaustion and exercise intolerance. By itself, this may not seem remarkable - just a flu outbreak, right? What was more worrisome were the debilitating after-effects. Instead of recovering over time, most continued to suffer in enormous ways, with many dealing with worsening symptoms without any end in sight. A magazine article discussing the Incline Village outbreak used the term “Raggedy Ann Syndrome”, alluding to the muscle pain and frailty that so many of the patients were experiencing. 
 
-## Core Principles
+At the same time, the small town of Truckee, just a few miles away from Incline Village, was dealing with a similarly confusing outbreak at a more localized scale. The town’s local high school had a student class size in 1984 which squeezed the capacity of the building, leaving ten teachers to prepare their lesson plans and eat lunch in a cramped room adjacent to the principal’s office Out of the ten teachers at the town’s sole high school who were sharing this particular room, nine fell sick with similar ailments, a flu-like illness that transmuted into something more sinister - Sick Building Syndrome with a twist.
 
-{{< highlight python >}}
-# Example of ethical AI code
-def ensure_fairness(data, algorithm):
-    return apply_fairness_constraints(data, algorithm)
-{{< /highlight >}}
+These Tahoe maladies bore similarity to several similarly puzzling cluster outbreaks of flu-like illnesses with long-lasting effects that have been documented throughout the 20th century. In 1934, over a hundred employees at LA County Hospital became sick with symptoms including muscle weakness and exercise intolerance in what a doctor later referred to as “atypical poliomyelitis". Similar outbreaks were documented over the following decades in Switzerland, Iceland, Denmark, the United States, South Africa, and Australia, among other countries. Following a 1955 outbreak in London, the term “myalgic encephalomyelitis” was coined - referring to the inflammation of the muscles and the brain.  And those were just some examples of outbreaks- the rest of society was scattered with countless cases of people dealing with similar complex inflictions, often without the coordination of an outbreak to bring much attention to their situations at all. 
 
-{{< image 
-    src="images/blog1_im1.jpg" 
-    alt="Ethical Framework Diagram" 
-    caption="Figure 1: Framework for ethical technology development" 
->}}
-## Conclusion
+The outbreak in Incline Village, however, went on to bear a more notorious historical significance. Why was this happening? Based on some tests and observations, local doctors believed it to be a form of chronic mononucleosis . Others suspected the cause may be environmental recent toxic cyanobacteria overgrowth or mold. The community was alarmed, and clearer answers were demanded, prompting the arrival of the CDC in 1985 to investigate what was going on. As Erik Johnson, a survivor of this outbreak, later shared: “It could have been different. The CDC might have responded to any of a number of different doctors who were reporting the mysterious illness across the USA, but as it happened, Lake Tahoe seemed like a more desirable place to conduct an investigation. By such quirks is history determined.”
 
-[Your content continues here...]
+This quirk of history which brought the footsoldiers of the CDC to Incline Village unfortunately brought little to no comfort to those dealing with the unexplained illness.  In her book Osler’s Web, the investigative journalist Hillary Johnson describes the efforts of the CDC as totally lacking. While the local doctors advocated for their patients, the scientists and bureaucrats sent by the CDC treated the entire situation with amusement and scorn. At the end, the CDC came and left without much of a resolution at all, except the declaration of a new diagnosis, encompassing all of the cases found in the Incline Village, along with patients with similar clinical presentations across the country. This new, wholly reductive diagnosis, called “Chronic Fatigue Syndrome”, is the name which continues to haunt so many people who deal with complex health conditions with a myriad of unexplainable symptoms.  In a historical tragedy likely attributable to malice, all of these medical phenomena became cast under the sweeping reduction of “they are tired, we don’t know why, and we don’t know what to do”. In this way, the ghost of the Incline Village outbreak lives on in everyone who is diagnosed with chronic fatigue syndrome since - passing on this diagnostic legacy to all who come its way. 
+
+## CFS and ME
+
+I was diagnosed with CFS myself in 2015, near the end of my first year of high school. It started with all the hallmark symptoms of a flu - fever, headache, chills, sore throat. However, a week later, while the fever had seemed to have resolved, the remaining symptoms remained, with a few other problems joining the party. Lightheadedness struck whenever I stood up or made sudden movements, demanding me to move more slowly. A perplexing haze surrounded me, clouding my vision even when I closed my eyes. The muscles across my arms and legs gnawed in turmoil, eating into my already limited sleep. My scalp and face stung with an unquenchable itch, as my nails threatened to scratch off my skin, desperate for relief that Benadryl couldn’t provide. I was tired but wired, alarms blazing. 
+
+As a diagnosis, CFS is defined by its inexplicability. It is without etiology, a pathology without cause. The perfectly convenient diagnosis for medical misfits, accompanied by a pitiful smile from an overworked nurse or a distant gaze from an uninterested doctor. Moreover, the reductive name pivots conversations to that of fatigue, which for many patients, completely misses the plot of their experience. You’re just tired, right? Do you mean anxious? For the patriarchal medical authority, it’s a slippery slide between being tired and being anxious. And through that attitude, the self-fulfilling prophecy is set into action - for who isn’t made anxious through a medical system that is seeking to cast them out at any given opportunity? Who isn’t driven to psychological tribulations through experiencing the sociality of existing as a disabled person in a viciously individualistic world?
+
+The imprecision of the name did affect me. When friends asked me what health issue I had, I shared the term “chronic fatigue syndrome” only as a last resort, preferring to describe my symptoms, give a general term like “immune system issue” or “neurological issue”. If I sensed a doctor or specialist was going to be dismissive, I would clamor to share the collection of test results which showed some abnormality, hypervigilant to the disastrous consequences of being dismissed by the medical establishment as just experiencing “tiredness” or “anxiety”. 
+
+I am not alone here. In fact, so much of the history of CFS patient advocacy since the infamous CDC construction of the CFS diagnosis has been to criticize the naming of the disease itself - as trivializing the condition and not reflecting the disease process, but also as being a prickly source of problems ranging from insurance coverage of whatever treatment is provided. In fact, CFS research has been so severely underfunded, that one almost must come back to its naming as an explanation for why this is the case. One study showed that ME/CFS research is more underfunded with respect to disease burden when compared to any other disease. While over a million people in the United States suffer from ME/CFS, no biomarker remains universally accepted, no FDA-approved treatment has been developed, and research efforts move like molasses amidst minimal funding. Relating these difficulties to the name of the diagnosis, patient and doctor advocacy efforts have led to more names being explored - one is “chronic fatigue and immune dysfunction syndrome” (CFIDS), and another is “systemic exertion intolerance disease” (SEID). However, neither of these have been able to eclipse CFS in their usage officially nor colloquially.
+
+CFS is not the only diagnosis to describe medical misfits. In the years since I was first diagnosed, as I braved the circus of blood tests, medical scans, and specialists, I was to be given even more shiny labels. In 2019, after a period of relapse marked by difficulty regulating my autonomic nervous system functions, including blood pressure, heart rate, and temperature, I was gifted another diagnosis - Postural Orthostatic Tachycardia Syndrome (POTS). Another specialist, who was far more experienced with CFS history and treatment, eagerly used the term Myalgic Encephalomyelitis instead of chronic fatigue syndrome - perhaps with the hope that a more complex-sounding name would grant me some legitimacy amidst a world of medical gaslighting. Then in 2024, I was given another label - Ehlers Danlos Syndrome, a connective tissue disorder. Perhaps years of inflammation had weakened my connective tissue, or maybe it was the connective tissue issue which had been causing so much of my pain and exhaustion, the doctor theorized. At last, I had found a family of labels, terms brought together in solidarity with a shared experience of neglect. As scientists continue to discover new niches and proclaim grander theories, I won’t be surprised if another diagnosis gets tossed at me - that is if I feel drawn to search for it. But I have a feeling that by itself, no new label will take me much closer to the goals of good health. So while names do matter in some ways, in other ways, they really seem to make no difference at all.
+
+## Long COVID
+
+In the past few years, this issue of names is re-emerging in a new context since the outbreak of the COVID-19 pandemic. Every wave of transmission left reverberating after-effects in many of the living. Though heterogenous in form, a significant subset of COVID long-haulers have faced symptoms eerily familiar to those with an eye towards the historical experience of ME/CFS. Prolonged flu-like symptoms, difficulty concentrating, exercise intolerance, and a plethora of other symptoms ranging from migraines to muscle spasms. 
+
+ME/CFS patients, researchers, and advocates quickly raised the alarm. Those who have traveled these terrains for years saw the warning signs. Moreover,  the soaring global viral load amidst the COVID-19 pandemic was a terrifying development for those who recognized the prevalence of viral-onset ME/CFS. It was the worst kind of fertile ground for an epidemic ME/CFS-type, this time under the guise of long-haul COVID, or its more elaborate name: post-acute sequelae of COVID-19 (PASC).
+
+## Today
+
+Today, while I have been fortunate enough to experience periods of remarkable health improvement, my protracted recovery remains ongoing. It’s been a decade, and while my attitude towards the name of the disease itself has softened, my heart holds just as much fire. I have realized that it isn’t enough to direct these emotional embers towards just the naming tragedy. Instead, my fury is towards the CDC bureaucracy which trivialized the Incline Village outbreak, starting a historical epoch leading to cascades of medical negligence and research funding struggles. My anger is towards a medical system which puts patients through a maze of hurdles in order to map symptoms, tests, and scans to a discrete set of diagnoses, only for millions to fall through the cracks of these diagnoses into a chasm without description. My rage is towards a society that is dominated by an ideology of greed, a politics of destruction which severs us from each other, which forecloses the possibilities for us to develop and practice kinship. 
+
+The world is changing - all categories emerge and dissolve, even those some may hold to be sacrosanct. I dream of a world in which we take care of each other. A world in which names and labels can be a source of dignity and not dismissal - where even if I did have to use a label that felt incomplete, it was not received with scorn, but rather with curiosity.I have a feeling that such a world will be much kinder to all those who struggle with any medical malady, no matter its name.
+
+

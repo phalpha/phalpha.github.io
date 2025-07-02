@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55830&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War, the United States, and Stanford | me, you, and the universe</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:55830/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="title-container">
+            <a href="http://localhost:55830/" class="site-title-link">
+                <h1 class="site-title">me, you, and the universe</h1>
+            </a>
+            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
+        </div>
+        <nav>
+            <ul>
+                
+                    
+                    <li><a href="/about/">About</a></li>
+                    
+                
+                    
+                    <li><a href="/projects/">Projects</a></li>
+                    
+                
+                    
+                    <li><a href="/blog/">Blog</a></li>
+                    
+                
+                    
+                    <li><a href="/thoughts/">Thoughts</a></li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<section class="section project-single">
+    <div class="container">
+        <article class="project">
+            <header>
+                <h1>War, the United States, and Stanford</h1>
+                <div class="project-meta">
+                    
+                    
+                </div>
+            </header>
+
+            
+
+            <div class="project-content">
+                <p><strong>&ldquo;Recon on War&rdquo; - Data Visualization Project</strong></p>
+<p>This interactive data visualization website examines Stanford University&rsquo;s financial connections to the military-industrial complex through comprehensive data analysis and visual storytelling. The project served as both a technical skill-building exercise and an investigation into an important social issue, combining data processing, visualization, and web development practice with meaningful research into institutional power structures.</p>
+<p>The analysis reveals significant financial ties, including over $60 million in funding from top weapons manufacturers like Boeing (52 projects, $40+ million) and Lockheed Martin (31 projects, $10+ million) since 2002. The visualization shows that the vast majority of proposed projects receive funding, highlighting the consistency of these institutional relationships.</p>
+<p><strong>Visit the website <a href="phalpha.github.io/recon_on_war">here</a>!</strong></p>
+<p><strong>Technical Implementation &amp; Skill Development:</strong></p>
+<ul>
+<li>
+<p><strong>Data Processing with Tableau</strong>: Extensively used Tableau for data cleaning, transformation, and exploratory analysis of complex funding datasets. This involved parsing multiple data sources, standardizing company names and project categories, calculating funding totals and project counts, and preparing the data for web-based visualization. The Tableau work provided hands-on experience with data preparation workflows and statistical analysis.</p>
+</li>
+<li>
+<p><strong>Interactive Visualization with D3.js &amp; Observable</strong>: Built sophisticated interactive charts using D3.js within Observable notebooks, creating dynamic bar charts with hover states that reveal detailed project information, funding breakdowns, and contextual data. The D3.js implementation involved data binding, SVG manipulation, animation transitions, and responsive design principles. Observable provided an excellent environment for iterative development and sharing interactive visualizations. The code for individual figures is available in the <a href="https://github.com/phalpha/recon_on_war/tree/main/figures">figures folder</a>, with Observable notebooks accessible directly (<a href="https://observablehq.com/@ph1729/project_figure1">Figure 1 notebook</a>, <a href="https://observablehq.com/@ph1729/figure2">Figure 2 notebook</a>, <a href="https://observablehq.com/@ph1729/figure3">Figure 3 notebook</a>, <a href="https://observablehq.com/@ph1729/figure4">Figure 4 notebook</a>, <a href="https://observablehq.com/@ph1729/figure5">Figure 5 notebook</a>, <a href="https://observablehq.com/@ph1729/project_figure1">Figure 6 notebook</a>).</p>
+</li>
+<li>
+<p><strong>Web Development</strong>: Integrated the visualizations into a cohesive website that combines data analysis with historical narrative and social commentary. This involved HTML/CSS layout, responsive design, and embedding Observable notebooks seamlessly into the broader site architecture.</p>
+</li>
+</ul>
+<p><strong>Data Sources:</strong></p>
+<ul>
+<li><strong>Stanford Electronic Research Administration (SeRA) Projects and Agreements Database</strong>: Contains reports with information about projects and agreements between various corporations and institutions and Stanford faculty (<a href="https://sera.stanford.edu/apex/f?p=200:91:15655527959837:::::">sera.stanford.edu</a>)</li>
+<li><strong>Defense Technical Information Center Database</strong>: Contains information on grants awarded to Stanford from the DoD and military (<a href="https://dtic.dimensions.ai/discover/grant">dtic.dimensions.ai</a>)</li>
+</ul>
+<p>The project allowed me to simultaneously develop technical competencies in modern data visualization tools while exploring the important issue of university-military funding relationships. By choosing a subject matter with real social significance, the technical learning process became more engaging and purposeful, demonstrating how data visualization can be used as a tool for institutional transparency and public education.</p>
+<p>The website contextualizes the quantitative findings within Stanford&rsquo;s broader historical relationship with military research, from Cold War-era projects to contemporary defense partnerships, showing how data analysis can illuminate patterns of institutional power and influence.</p>
+<p><strong>Project repository</strong>: <a href="https://github.com/phalpha/recon_on_war">github.com/phalpha/recon_on_war</a></p>
+
+            </div>
+
+            
+        </article>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
+        </div>
+    </div>
+      
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</footer>
+</footer>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55830&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Convex Approach to Two-Layer Convolutional Neural Networks | me, you, and the universe</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:55830/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="title-container">
+            <a href="http://localhost:55830/" class="site-title-link">
+                <h1 class="site-title">me, you, and the universe</h1>
+            </a>
+            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
+        </div>
+        <nav>
+            <ul>
+                
+                    
+                    <li><a href="/about/">About</a></li>
+                    
+                
+                    
+                    <li><a href="/projects/">Projects</a></li>
+                    
+                
+                    
+                    <li><a href="/blog/">Blog</a></li>
+                    
+                
+                    
+                    <li><a href="/thoughts/">Thoughts</a></li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<section class="section project-single">
+    <div class="container">
+        <article class="project">
+            <header>
+                <h1>A Convex Approach to Two-Layer Convolutional Neural Networks</h1>
+                <div class="project-meta">
+                    
+                    
+                </div>
+            </header>
+
+            
+
+            <div class="project-content">
+                <h2 id="overview">Overview</h2>
+<p>In this project, our team investigated whether we could apply convex optimization (mathematical problems with guaranteed optimal solutions) to convolutional neural networks (CNNs - the type of AI models great at recognizing images) for classifying pictures. Instead of using the typical training methods that can get stuck finding &ldquo;good enough&rdquo; solutions, we reformulated the entire problem to find the absolute minima every time with convex optimization.</p>
+<h3 id="the-core-magic">The Core Magic</h3>
+<ul>
+<li><strong>Convex Optimization</strong>: We transformed the usual non-convex convolutional neural network training into a clean convex mathematical problem.</li>
+<li><strong>Smart Activation Functions</strong>: Instead of the standard ReLU activation, we used polynomial functions (fancy curves) that behaved similarly but played nicely with convex math</li>
+<li><strong>No More Local Minima</strong>: Unlike regular neural networks that might get stuck in &ldquo;pretty good&rdquo; solutions, our approach was guaranteed to find the globally best solution</li>
+</ul>
+<h3 id="the-math-behind-it">The Math Behind It</h3>
+<p>We reformulated two-layer CNNs using something called semidefinite programming - essentially a way to solve optimization problems involving matrices with special properties. For binary classification (is this a car or plane?), we needed one type of formulation, but for multi-class problems (what&rsquo;s in this image out of 10 options?), we had to get creative with vector outputs and separate parameter matrices for each class.</p>
+<h3 id="implementation-details">Implementation Details</h3>
+<ul>
+<li><strong>Binary Task</strong>: Used CVXPY (a Python library for convex problems) to classify planes vs cars from CIFAR-2</li>
+<li><strong>Multi-class Challenge</strong>: Built a custom PyTorch implementation to handle all 10 CIFAR-10 categories</li>
+<li><strong>Polynomial Activation</strong>: Used σ(u) = 0.09u² + 0.5u + 0.47 - a quadratic curve that mimics ReLU behavior</li>
+<li><strong>Constraint Wrestling</strong>: Had to enforce tricky mathematical constraints to keep my matrices well-behaved during training</li>
+</ul>
+<h3 id="tools-used">Tools Used</h3>
+<ul>
+<li><strong>Python</strong> - My go-to for implementation</li>
+<li><strong>CVXPY</strong> - Specialized library for convex optimization (made the binary case much easier)</li>
+<li><strong>PyTorch</strong> - Had to get creative with custom modules for the multi-class problem</li>
+<li><strong>NumPy</strong> - Essential for all the matrix math</li>
+<li><strong>CIFAR-10/CIFAR-2</strong> - Standard image datasets for testin</li>
+</ul>
+<h3 id="performance-numbers">Performance Numbers</h3>
+<ul>
+<li><strong>Binary Classification</strong>: Hit 84.05% test accuracy (compared to 88.90% with traditional methods)</li>
+<li><strong>Multi-class Classification</strong>: Reached 28.5% test accuracy (vs 36.50% baseline)</li>
+</ul>
+<h3 id="key-challenges">Key Challenges</h3>
+<p>The main limitation was computational efficiency - our custom PyTorch implementation lacked the optimizations built into standard deep learning frameworks, making training significantly slower. We also had to make some compromises on mathematical constraints due to computational limitations.</p>
+<h3 id="moving-forward">Moving Forward</h3>
+<p>While the convex approach didn&rsquo;t outperform standard methods, it remains a valuable task to show the feasibility of global optimization for neural networks and provided insights into the mathematical structure underlying deep learning. The project highlighted both the theoretical promise and practical challenges of applying convex optimization to computer vision tasks.</p>
+<p><a href="https://github.com/phalpha/convex_convolutions">Github Link</a>, contains Project code, paper, and presentation.</p>
+<hr>
+<p><em>This was a group project completed as part of CS 231N (Deep Learning for Computer Vision) at Stanford University, working under the guidance of EE PhD student Burak Bartan, whose prior research on convex neural networks provided the theoretical foundation for our implementation.</em></p>
+
+            </div>
+
+            
+        </article>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
+        </div>
+    </div>
+      
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</footer>
+</footer>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
+</body>
+</html>

@@ -8,32 +8,29 @@
     <loc>http://localhost:55830/</loc>
     <lastmod>2025-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/tags/mathematics/</loc>
-    <lastmod>2023-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:55830/projects/project4/</loc>
-    <lastmod>2023-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:55830/projects/project3/</loc>
-    <lastmod>2023-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:55830/projects/</loc>
-    <lastmod>2023-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:55830/tags/</loc>
-    <lastmod>2023-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:55830/tags/technology/</loc>
-    <lastmod>2023-08-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:55830/blog/</loc>
-    <lastmod>2023-08-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:55830/tags/ethics/</loc>
-    <lastmod>2023-08-16T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:55830/blog/second_blog/</loc>
-    <lastmod>2023-08-16T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55830/tags/health/</loc>
+    <lastmod>2025-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55830/tags/history/</loc>
+    <lastmod>2025-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55830/tags/science/</loc>
+    <lastmod>2025-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55830/tags/</loc>
+    <lastmod>2025-02-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55830/tags/philosophy/</loc>
+    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:55830/blog/third_blog/</loc>
+    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:55830/about/</loc>
     <lastmod>2023-08-15T00:00:00+00:00</lastmod>
@@ -41,15 +38,54 @@
     <loc>http://localhost:55830/blog/first_blog/</loc>
     <lastmod>2023-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:55830/tags/science/</loc>
-    <lastmod>2023-08-15T00:00:00+00:00</lastmod>
+    <loc>http://localhost:55830/projects/project10/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project18/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project14/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project17/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project11/</loc>
   </url><url>
     <loc>http://localhost:55830/tags/data/</loc>
   </url><url>
+    <loc>http://localhost:55830/projects/project19/</loc>
+  </url><url>
     <loc>http://localhost:55830/projects/project2/</loc>
   </url><url>
-    <loc>http://localhost:55830/tags/history/</loc>
+    <loc>http://localhost:55830/projects/project5/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project4/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project3/</loc>
+  </url><url>
+    <loc>http://localhost:55830/tags/ethics/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project12/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project21/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project7/</loc>
   </url><url>
     <loc>http://localhost:55830/projects/project1/</loc>
+  </url><url>
+    <loc>http://localhost:55830/tags/mathematics/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project9/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project20/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project13/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project15/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project16/</loc>
+  </url><url>
+    <loc>http://localhost:55830/tags/technology/</loc>
+  </url><url>
+    <loc>http://localhost:55830/projects/project8/</loc>
   </url>
 </urlset>

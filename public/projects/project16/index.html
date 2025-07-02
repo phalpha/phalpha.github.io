@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55830&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence Analysis of Genes | me, you, and the universe</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:55830/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="title-container">
+            <a href="http://localhost:55830/" class="site-title-link">
+                <h1 class="site-title">me, you, and the universe</h1>
+            </a>
+            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
+        </div>
+        <nav>
+            <ul>
+                
+                    
+                    <li><a href="/about/">About</a></li>
+                    
+                
+                    
+                    <li><a href="/projects/">Projects</a></li>
+                    
+                
+                    
+                    <li><a href="/blog/">Blog</a></li>
+                    
+                
+                    
+                    <li><a href="/thoughts/">Thoughts</a></li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<section class="section project-single">
+    <div class="container">
+        <article class="project">
+            <header>
+                <h1>Sequence Analysis of Genes</h1>
+                <div class="project-meta">
+                    
+                    
+                </div>
+            </header>
+
+            
+
+            <div class="project-content">
+                <h2 id="research-focus">Research Focus</h2>
+<p>The project explored the research question: <strong>Which genes are expressed in <em>Landoltia punctata</em>, and how do they compare with expressed genes from other species?</strong></p>
+<p><em>Landoltia punctata</em> (duckweed) is a freshwater aquatic plant of significant scientific interest due to its applications in:</p>
+<ul>
+<li>Bioremediation</li>
+<li>Potential biofuel production</li>
+</ul>
+<h2 id="methodology">Methodology</h2>
+<ul>
+<li>Isolated and sequenced genes from a cDNA library (mRNA sequences copied into DNA)</li>
+<li>Analyzed previously undetermined sequences from <em>Landoltia punctata</em></li>
+<li>Performed comparative sequence analysis with other eukaryotic organisms</li>
+<li>Investigated evolutionary relationships through phylogenetic analysis</li>
+</ul>
+<h2 id="research-outcomes">Research Outcomes</h2>
+<p>Successfully analyzed and submitted two novel DNA sequences to the NCBI GenBank, the international repository of DNA sequences:</p>
+<ul>
+<li><strong>GenBank Accession: 94PH1.15 WSSP Duckweed cDNA library Landoltia punctata cDNA similar to glutathione peroxidase 6, mRNA sequence</strong> - <a href="https://www.ncbi.nlm.nih.gov/nuccore/JZ971611.1">NCBI Entry</a></li>
+<li><strong>94PH1.16 WSSP Duckweed cDNA library Landoltia punctata cDNA similar to Rhodanese-like domain-containing protein, mRNA sequence</strong> - <a href="https://www.ncbi.nlm.nih.gov/nuccore/JZ971610.1">NCBI Entry</a></li>
+</ul>
+<p>These sequences are now permanently archived in the public database and available for use by the global scientific community.</p>
+<hr>
+<p><em>This project was completed through my participation in the 2015 and 2016 Waksman Student Scholars Program.</em></p>
+
+            </div>
+
+            
+        </article>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
+        </div>
+    </div>
+      
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</footer>
+</footer>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
+</body>
+</html>

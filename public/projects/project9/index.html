@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55830&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modeling the Conservation of Florida Manatees | me, you, and the universe</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:55830/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="title-container">
+            <a href="http://localhost:55830/" class="site-title-link">
+                <h1 class="site-title">me, you, and the universe</h1>
+            </a>
+            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
+        </div>
+        <nav>
+            <ul>
+                
+                    
+                    <li><a href="/about/">About</a></li>
+                    
+                
+                    
+                    <li><a href="/projects/">Projects</a></li>
+                    
+                
+                    
+                    <li><a href="/blog/">Blog</a></li>
+                    
+                
+                    
+                    <li><a href="/thoughts/">Thoughts</a></li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<section class="section project-single">
+    <div class="container">
+        <article class="project">
+            <header>
+                <h1>Modeling the Conservation of Florida Manatees</h1>
+                <div class="project-meta">
+                    
+                    
+                </div>
+            </header>
+
+            
+
+            <div class="project-content">
+                <h1 id="modeling-strategies-for-the-conservation-of-florida-manatees-using-pomdp-methods">Modeling Strategies for the Conservation of Florida Manatees using POMDP Methods</h1>
+<h2 id="overview">Overview</h2>
+<p>This project explores the application of Partially Observable Markov Decision Process (POMDP) models to formulate optimal conservation strategies for Florida Manatee populations. The work demonstrates how decision-making frameworks can address wildlife conservation challenges under uncertainty, providing a simulation-based approach to optimize resource allocation for conservation efforts.</p>
+<h2 id="problem-context">Problem Context</h2>
+<p>Florida Manatees are a threatened species facing multiple environmental challenges including:</p>
+<ul>
+<li>Climate change effects on marine ecosystems</li>
+<li>Loss of seagrass food sources</li>
+<li>Unusually cold winters</li>
+<li>Algal bloom outbreaks</li>
+</ul>
+<p>The project addresses the resource management challenge of determining optimal conservation strategies under uncertainty, where the exact population state is difficult to observe directly.</p>
+<h2 id="technical-approach">Technical Approach</h2>
+<h3 id="pomdp-framework">POMDP Framework</h3>
+<p>Partially Observable Markov Decision Processes (POMDPs) are mathematical frameworks for sequential decision-making under uncertainty where:</p>
+<ul>
+<li>The true state of the system is not directly observable</li>
+<li>An agent receives noisy or incomplete observations</li>
+<li>Actions affect future states probabilistically</li>
+<li>The goal is to find an optimal policy that maximizes long-term rewards</li>
+</ul>
+<p>This framework is particularly well-suited for conservation problems where population states are uncertain and management decisions must be made based on limited observational data.</p>
+<h3 id="problem-formulation">Problem Formulation</h3>
+<p>Our simulation model defines:</p>
+<ul>
+<li><strong>States</strong>: [extinct, endangered, threatened]</li>
+<li><strong>Actions</strong>: [do nothing, survey, rescue, rehabilitate]</li>
+<li><strong>Observations</strong>: [see nothing, wild carcass, wild living]</li>
+<li><strong>Initial State</strong>: threatened</li>
+<li><strong>Discount Factor</strong>: 0.9</li>
+</ul>
+<p><em>Note: This is a simulation based on available literature and our own problem formulation. Transition probabilities, observation models, and reward structures were designed based on educated assumptions about manatee conservation dynamics.</em></p>
+<h3 id="solution-methods">Solution Methods</h3>
+<p><strong>Offline Methods:</strong></p>
+<ul>
+<li><strong>QMDP</strong>: Simple approximation assuming perfect observability</li>
+<li><strong>Fast Informed Bound (FIB)</strong>: Tighter upper bound incorporating observations</li>
+</ul>
+<p><strong>Online Methods:</strong></p>
+<ul>
+<li><strong>PO-UCT</strong>: Partially Observable Upper Confidence Tree combining Monte Carlo Tree Search with Upper Confidence Trees</li>
+</ul>
+<h2 id="key-results">Key Results</h2>
+<ul>
+<li>Generated alpha vector visualizations showing optimal action regions based on belief states</li>
+<li>Created ternary plots mapping full belief states to optimal actions</li>
+<li>Demonstrated that rehabilitation is optimal for moderate endangerment probabilities (0.071-0.500 for QMDP)</li>
+<li>Survey actions dominate when endangerment probability is low</li>
+<li>Rescue actions are preferred when endangerment probability is high</li>
+<li>POMDP methods can help as a framework for wildlife conservation decision-making</li>
+</ul>
+<h2 id="technologies-used">Technologies Used</h2>
+<ul>
+<li><strong>Julia</strong> programming language with <strong>Pluto</strong> notebooks for interactive development</li>
+<li><strong>POMDPs.jl</strong> ecosystem including:</li>
+<li>QuickPOMDPs.jl</li>
+<li>QMDP.jl</li>
+<li>FIB.jl</li>
+<li>BasicPOMCP.jl</li>
+<li>D3Trees.jl for visualization</li>
+</ul>
+<p><a href="https://github.com/phalpha/save_the_manatees/blob/main/Paper_Writeup.pdf">Paper Link</a></p>
+<h2 id="github-link"><a href="https://github.com/phalpha/save_the_manatees">Github Link</a></h2>
+<p><em>Project completed for CS 238 (Decision Making under Uncertainty) at Stanford University. Collaborated with Rubens Lacouture and Aarya Mecwan.</em></p>
+
+            </div>
+
+            
+        </article>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
+        </div>
+    </div>
+      
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</footer>
+</footer>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
+</body>
+</html>

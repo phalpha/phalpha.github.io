@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56279&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55830&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indoor Positioning System | me, you, and the universe</title>
@@ -10,13 +10,13 @@
     
     
     
-    <link rel="stylesheet" href="http://localhost:56279/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
+    <link rel="stylesheet" href="http://localhost:55830/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
 </head>
 <body>
     <header>
     <div class="container">
         <div class="title-container">
-            <a href="http://localhost:56279/" class="site-title-link">
+            <a href="http://localhost:55830/" class="site-title-link">
                 <h1 class="site-title">me, you, and the universe</h1>
             </a>
             <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
@@ -64,21 +64,95 @@
             
 
             <div class="project-content">
-                <h2 id="project-overview">Project Overview</h2>
-<p>Detailed description of the project&hellip;</p>
-<h2 id="features">Features</h2>
+                <h2 id="introduction">Introduction</h2>
 <ul>
-<li>Feature 1</li>
-<li>Feature 2</li>
-<li>Feature 3</li>
-</ul>
-<h2 id="technologies-used">Technologies Used</h2>
+<li>GPS is unreliable indoors (7.8m accuracy worst-case).</li>
+<li>Existing solutions (WiFi/RSSI: 5-15m accuracy; BLE beacons) require user devices and infrastructure.</li>
+<li>This system uses computer vision to achieve:
 <ul>
-<li>Hugo</li>
-<li>JavaScript</li>
-<li>CSS</li>
+<li>Sub-meter positioning accuracy</li>
+<li>user identification</li>
 </ul>
-<p><a href="https://example.com">Visit Project</a></p>
+</li>
+<li>Applications: Indoor navigation (malls/airports), consumer analytics, human-robot interaction.</li>
+</ul>
+<h2 id="system-overview">System Overview</h2>
+<p><strong>Hardware:</strong></p>
+<ul>
+<li>Two Axis M1054 network cameras</li>
+<li>1280×800 resolution, 84° FOV, 25 FPS</li>
+<li>Mounted 6ft apart on ceiling at 21° downward tilt</li>
+</ul>
+<p><strong>Software:</strong></p>
+<ul>
+<li>Ubuntu OS, Python/C++</li>
+<li>OpenCV (core processing)</li>
+<li>NumPy (matrix operations)</li>
+<li>MATLAB (data filtering/visualization)</li>
+</ul>
+<p><strong>Workflow:</strong></p>
+<ol>
+<li>Video stream capture →</li>
+<li>Image processing →</li>
+<li>Parallel identification &amp; location calculation →</li>
+<li>Data synthesis →</li>
+<li>Server publishing</li>
+</ol>
+<h2 id="image-processing">Image Processing</h2>
+<ol>
+<li><strong>Background Subtraction</strong><br>
+Isolates moving objects (people) from static background</li>
+<li><strong>Noise Reduction</strong><br>
+Erosion/dilation filters remove artifacts</li>
+<li><strong>Contour Detection</strong><br>
+Creates bounding polygons around subjects<br>
+Output: Bounding rectangles for identification/location</li>
+</ol>
+<h2 id="user-identification">User Identification</h2>
+<ol>
+<li><strong>Feature Extraction</strong><br>
+SURF algorithm detects edges/textures (e.g., clothing patterns)</li>
+<li><strong>Input Standardization</strong><br>
+K-means clustering converts variable features → fixed-size neural net input</li>
+<li><strong>Classification</strong><br>
+OpenCV&rsquo;s neural network matches features to identities<br>
+<strong>Accuracy: &gt;95%</strong> (paper-reported)</li>
+</ol>
+<h2 id="calculating-location">Calculating Location</h2>
+<p><strong>Method:</strong> Stereoscopic triangulation</p>
+<ol>
+<li>Horizontal angle calculation:<br>
+<code>angle = (pixel_offset_from_center) × (0.0656°/pixel)</code><br>
+(Derived from 84° FOV / 1280 pixels)</li>
+<li><strong>ASA Triangle Solving:</strong>
+<ul>
+<li>Uses camera spacing (6ft) and dual-camera angles</li>
+<li>Projects calculations onto floor plane (accounts for 21° tilt)</li>
+</ul>
+</li>
+<li><strong>Coordinate System:</strong>
+<ul>
+<li>Origin (0,0) = midpoint between cameras projected on floor</li>
+<li>Output format: (x_feet_right, y_feet_forward)<br>
+<strong>Accuracy:</strong> ≤1 ft near frame center (decreases toward edges due to lens distortion)</li>
+</ul>
+</li>
+</ol>
+<h2 id="references">References</h2>
+<ol>
+<li>NASA GPS history documentation</li>
+<li>OpenCV technical docs (Background Subtraction, K-means, Neural Nets)</li>
+<li>SURF algorithm licensing notes</li>
+<li>Axis M1054 camera specifications</li>
+<li>Stereoscopy fundamentals</li>
+</ol>
+<h2 id="outcome">Outcome</h2>
+<p>This paper and poster was accepted for review and presentation at the MIT IEEE Undergraduate Research Conference.
+At the conference, I received the Second Best Paper award.</p>
+<p>This award-winning paper was published in the IEEE Xplore Library, linked below:
+<a href="https://ieeexplore.ieee.org/document/8284091">Paper</a></p>
+<p><a href="https://nj01911694.schoolwires.net/cms/lib/NJ01911694/Centricity/Domain/14/Poojit%20poster.pdf">Poster</a></p>
+<p><a href="https://github.com/phalpha/IPS">Github Link</a></p>
 
             </div>
 

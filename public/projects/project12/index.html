@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55830&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploration of Pharma, Finance, and Healthcare | me, you, and the universe</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:55830/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="title-container">
+            <a href="http://localhost:55830/" class="site-title-link">
+                <h1 class="site-title">me, you, and the universe</h1>
+            </a>
+            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
+        </div>
+        <nav>
+            <ul>
+                
+                    
+                    <li><a href="/about/">About</a></li>
+                    
+                
+                    
+                    <li><a href="/projects/">Projects</a></li>
+                    
+                
+                    
+                    <li><a href="/blog/">Blog</a></li>
+                    
+                
+                    
+                    <li><a href="/thoughts/">Thoughts</a></li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<section class="section project-single">
+    <div class="container">
+        <article class="project">
+            <header>
+                <h1>Exploration of Pharma, Finance, and Healthcare</h1>
+                <div class="project-meta">
+                    
+                    
+                </div>
+            </header>
+
+            
+
+            <div class="project-content">
+                <h2 id="project-overview">Project Overview</h2>
+<p>This project explores the financial relationships between drug and medical device companies and healthcare providers using the Center for Medicare and Medicaid Services (CMS) Open Payments Data from 2022. The dataset comprises 14.11 million records reflecting transactions totaling $12.59 billion.</p>
+<p><strong>Central Question:</strong> Given the characteristics of a transaction (transaction purpose, payer/recipient, state where the transaction was conducted, etc.), can we predict the price of the transaction?</p>
+<p>The project explores trends and patterns within the financial landscape of healthcare and forecasts transaction amounts using both statistical and machine learning methodologies.</p>
+<h2 id="dataset-description">Dataset Description</h2>
+<p>The Open Payments Dataset contains information about financial relationships between drug/medical device companies and healthcare providers, collected by the US federal government. We used the 2022 data containing payments made between January 1, 2022 and December 31, 2022.</p>
+<p>The data is reported across three categories:</p>
+<ul>
+<li><strong>General</strong> (13,148,520 rows, 91 columns, 6.12 GB): Payments not in connection with research</li>
+<li><strong>Research</strong> (953,320 rows, 252 columns, 537.69 MB): Payments made in connection with research agreements</li>
+<li><strong>Ownership</strong> (3,919 rows, 30 columns, 1.58 MB): Information on ownership or investment stakes</li>
+</ul>
+<p>Key features include recipient information (name, location, specialty), reporting entity details (company name, payment date, nature of payment), and dollar amounts.</p>
+<h2 id="data-analysis">Data Analysis</h2>
+<h3 id="payment-type-analysis">Payment Type Analysis</h3>
+<ul>
+<li><strong>Most frequent transactions:</strong> Food and beverage, travel and lodging, non-consulting compensation</li>
+<li><strong>Highest total cost:</strong> Royalty and license fees (~$1 billion total)</li>
+<li><strong>Highest average cost per transaction:</strong> Acquisitions, followed by royalties and licensing</li>
+</ul>
+<h3 id="geographic-analysis">Geographic Analysis</h3>
+<ul>
+<li><strong>Top states by total cost:</strong> California, Texas, New York, Pennsylvania</li>
+<li><strong>Notable outlier:</strong> Pennsylvania (~$826 million) due to large mRNA vaccine royalties paid to University of Pennsylvania researchers</li>
+</ul>
+<h3 id="product-categories">Product Categories</h3>
+<p>Top spending areas include infectious diseases, surgery, neuroscience, and immunology.</p>
+<h2 id="predicting-payment-amount">Predicting Payment Amount</h2>
+<p>We implemented two prediction models using features like recipient state, specialty, company name, payment type, and product indicators.</p>
+<h3 id="k-nearest-neighbors">K-Nearest Neighbors</h3>
+<ul>
+<li>Used categorical distance function with feature weighting</li>
+<li>Experimented with different K values, chose K=10</li>
+<li><strong>Test RMSE:</strong> 705.8</li>
+</ul>
+<h3 id="linear-regression">Linear Regression</h3>
+<ul>
+<li>Added feature engineering: PA state indicator, top product categories, inter-state distances</li>
+<li>Used BigQuery ML for implementation</li>
+<li><strong>Test RMSE:</strong> 843.3</li>
+</ul>
+<h2 id="performance-comparison">Performance Comparison</h2>
+<p><strong>KNN vs Linear Regression:</strong></p>
+<ul>
+<li>KNN achieved better prediction accuracy (lower RMSE)</li>
+<li>Linear regression was significantly more efficient in terms of IO costs, time, and monetary cost</li>
+<li>KNN: 4 min 6 sec runtime, $0.016 cost</li>
+<li>Linear regression: 25 seconds runtime, negligible cost</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>This project analyzed the relationship between drug/medical companies and healthcare providers through the 2022 Open Payments Data. We visualized payment patterns across geographic locations, companies, and payment types, and successfully implemented prediction models for transaction amounts.</p>
+<p>The analysis demonstrates how large healthcare financial datasets can provide insights into industry relationships and potentially identify payment discrepancies. Future work could expand to multi-year analysis, classification approaches, and integration with additional pharmaceutical company data.</p>
+<hr>
+<p>This was my final project for a CS 145 Project class on databases. <a href="https://github.com/phalpha/pharma_healthcare_finance">Github Link</a>, contains some the project notebook with writeup, code, and figures.</p>
+
+            </div>
+
+            
+        </article>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
+        </div>
+    </div>
+      
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</footer>
+</footer>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
+</body>
+</html>

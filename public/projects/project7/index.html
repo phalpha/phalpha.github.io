@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55830&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Indices and Satellites | me, you, and the universe</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:55830/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="title-container">
+            <a href="http://localhost:55830/" class="site-title-link">
+                <h1 class="site-title">me, you, and the universe</h1>
+            </a>
+            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
+        </div>
+        <nav>
+            <ul>
+                
+                    
+                    <li><a href="/about/">About</a></li>
+                    
+                
+                    
+                    <li><a href="/projects/">Projects</a></li>
+                    
+                
+                    
+                    <li><a href="/blog/">Blog</a></li>
+                    
+                
+                    
+                    <li><a href="/thoughts/">Thoughts</a></li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<section class="section project-single">
+    <div class="container">
+        <article class="project">
+            <header>
+                <h1>Health Indices and Satellites</h1>
+                <div class="project-meta">
+                    
+                    
+                </div>
+            </header>
+
+            
+
+            <div class="project-content">
+                <h1 id="maternal-and-child-health-prediction-using-satellite-imagery">Maternal and Child Health Prediction Using Satellite Imagery</h1>
+<h2 id="project-overview">Project Overview</h2>
+<p>This data science project explores the use of machine learning with satellite imagery and publicly available geotagged data to estimate key maternal and child health (MCH) indicators in low- and middle-income countries (LMICs). The research addresses the challenge of limited, expensive, and outdated MCH data by leveraging satellite-derived features as predictors.</p>
+<h2 id="problem-statement">Problem Statement</h2>
+<p>Traditional MCH indicator collection faces several limitations:</p>
+<ul>
+<li>Death registers are unreliable in most LMICs</li>
+<li>Demographic and Health Surveys (DHS) are expensive and nationally representative but sample only &lt;2% of villages/neighborhoods</li>
+<li>Survey estimates are often outdated due to infrequent collection cycles</li>
+<li>Low spatial and temporal resolution limits granular insights</li>
+</ul>
+<h2 id="data-sources">Data Sources</h2>
+<h3 id="ground-truth-data">Ground Truth Data</h3>
+<ul>
+<li><strong>USAID Demographic and Health Surveys (DHS)</strong>: 114,113 surveys collected between 1986-2019 with up to 7 indicators per survey</li>
+<li><strong>Target MCH Indicators</strong>:
+<ul>
+<li>Mean/Median BMI</li>
+<li>Under Five Mortality Rate</li>
+<li>Unmet Need Rate</li>
+<li>Skilled Birth Attendant Rate</li>
+<li>Stunted Growth Rate</li>
+</ul>
+</li>
+</ul>
+<h3 id="feature-datasets">Feature Datasets</h3>
+<h4 id="1-google-earth-engine-dataset">1. Google Earth Engine Dataset</h4>
+<ul>
+<li>120,985 data points × 11,945 features</li>
+<li>Satellite-derived geo-tagged variables collected through Google Earth Engine API</li>
+</ul>
+<h4 id="2-mosaiks-dataset">2. MOSAIKS Dataset</h4>
+<ul>
+<li>100,960 data points × 4,000 features</li>
+<li>Spatial encodings collected through MOSAIKS API from UC Berkeley project</li>
+</ul>
+<h4 id="3-landsat-image-dataset">3. Landsat Image Dataset</h4>
+<ul>
+<li>Raw satellite imagery from NASA and U.S. Geological Survey (USGS)</li>
+<li>75,000 examples × 11 features</li>
+<li>8 spectral channels (bands) + 3 scalar features</li>
+</ul>
+<h2 id="methodology">Methodology</h2>
+<h3 id="extracted-feature-analysis">Extracted Feature Analysis</h3>
+<p><strong>Regression Models:</strong></p>
+<ul>
+<li>Microsoft Azure AutoML for automated model selection and training</li>
+<li>Stack and Voting Ensembles combining multiple algorithms:
+<ul>
+<li>XGBoostRegressor</li>
+<li>LightGBM</li>
+<li>ExtremeRandomTrees</li>
+<li>RandomForest</li>
+<li>ElasticNet</li>
+</ul>
+</li>
+</ul>
+<p><strong>Classification Models:</strong></p>
+<ul>
+<li>K-means discretization (k=5 clusters) of continuous health indicators</li>
+<li>AutoML with Deep Learning using Stack Ensemble:
+<ul>
+<li>LightGBM</li>
+<li>XGBoostClassifier</li>
+</ul>
+</li>
+</ul>
+<h3 id="raw-image-analysis">Raw Image Analysis</h3>
+<ul>
+<li>Custom machine learning models for Landsat imagery</li>
+<li><strong>Convolutional Neural Networks (CNN)</strong>: Base model architecture</li>
+<li><strong>Vision Transformers (ViT)</strong>: Advanced transformer-based approach</li>
+</ul>
+<h2 id="results">Results</h2>
+<h3 id="regression-performance-r-scores">Regression Performance (R² Scores)</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Health Indicator</th>
+          <th>GEE Dataset</th>
+          <th>MOSAIKS Dataset</th>
+          <th>Combined Dataset</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Median BMI</td>
+          <td>0.623</td>
+          <td>0.450</td>
+          <td>0.627</td>
+      </tr>
+      <tr>
+          <td>Unmet Need Rate</td>
+          <td>0.561</td>
+          <td>0.280</td>
+          <td>0.566</td>
+      </tr>
+      <tr>
+          <td>Under Five Mortality Rate</td>
+          <td>0.503</td>
+          <td>0.251</td>
+          <td>0.468</td>
+      </tr>
+      <tr>
+          <td>Skilled Birth Attendant Rate</td>
+          <td>0.657</td>
+          <td>0.310</td>
+          <td><strong>0.668</strong></td>
+      </tr>
+      <tr>
+          <td>Stunted Rate</td>
+          <td>0.324</td>
+          <td>0.194</td>
+          <td>0.335</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="classification-accuracy">Classification Accuracy</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Health Indicator</th>
+          <th>GEE Dataset</th>
+          <th>MOSAIKS Dataset</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Median BMI</td>
+          <td>52%</td>
+          <td>53%</td>
+      </tr>
+      <tr>
+          <td>Unmet Need Rate</td>
+          <td>50%</td>
+          <td>48%</td>
+      </tr>
+      <tr>
+          <td>Under Five Mortality Rate</td>
+          <td>48%</td>
+          <td>45%</td>
+      </tr>
+      <tr>
+          <td>Skilled Birth Attendant Rate</td>
+          <td><strong>68%</strong></td>
+          <td>55%</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="raw-image-vs-extracted-features-comparison">Raw Image vs. Extracted Features Comparison</h3>
+<ul>
+<li><strong>Skilled Birth Attendant Rate</strong>:
+<ul>
+<li>Raw Image Base Model: R² = 0.583</li>
+<li>Vision Transformer Model: R² = 0.414</li>
+<li>Extracted Feature Model: R² = 0.668</li>
+</ul>
+</li>
+</ul>
+<h2 id="key-findings">Key Findings</h2>
+<ol>
+<li><strong>Dataset Combination Benefits</strong>: Combining Google Earth Engine and MOSAIKS datasets improved performance over individual datasets</li>
+<li><strong>Indicator-Specific Performance</strong>: Certain health indicators (Median BMI, Skilled Birth Attendant Rate) showed better predictability from satellite data</li>
+<li><strong>Classification Limitations</strong>: Reformulating as classification was disadvantageous without careful discretization consideration</li>
+<li><strong>Feature Engineering Advantage</strong>: Extracted features outperformed raw image analysis, suggesting the importance of domain-specific feature engineering</li>
+</ol>
+<h2 id="technical-validation">Technical Validation</h2>
+<p>The model underwent sanity checking through urban/rural location classification, demonstrating the ability to capture meaningful spatial patterns from satellite imagery.</p>
+<h2 id="future-directions">Future Directions</h2>
+<ul>
+<li><strong>Data Expansion</strong>: Incorporate Living Standard Measurement Studies (LSMS) for additional ground truth</li>
+<li><strong>Feature Engineering</strong>: Improve featurization and address missing data sources</li>
+<li><strong>Model Architecture</strong>: Explore deeper networks and time-variation modeling</li>
+<li><strong>Temporal Analysis</strong>: Consider temporal changes in satellite imagery for improved predictions</li>
+</ul>
+<h2 id="impact-and-applications">Impact and Applications</h2>
+<p>This research demonstrates the potential for satellite imagery to augment traditional survey data for MCH monitoring, offering:</p>
+<ul>
+<li>Cost-effective large-scale health monitoring</li>
+<li>Higher spatial resolution insights</li>
+<li>More timely indicator updates</li>
+<li>Support for targeted public health interventions in underserved areas</li>
+</ul>
+<p>The project establishes a foundation for using remote sensing technology to address critical gaps in global health data collection, particularly benefiting resource-constrained settings where traditional survey methods are challenging to implement.</p>
+<hr>
+<p><em>I was funded to work on this project alongside Emily Wiesel and Mac Ya through the Stanford Data Science for Social Good Fellowship. Our mentor was postdoctoral fellow Haojie Wang.</em></p>
+
+            </div>
+
+            
+        </article>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
+        </div>
+    </div>
+      
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</footer>
+</footer>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55830&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Technologies for Proteomic Analysis | me, you, and the universe</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:55830/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="title-container">
+            <a href="http://localhost:55830/" class="site-title-link">
+                <h1 class="site-title">me, you, and the universe</h1>
+            </a>
+            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
+        </div>
+        <nav>
+            <ul>
+                
+                    
+                    <li><a href="/about/">About</a></li>
+                    
+                
+                    
+                    <li><a href="/projects/">Projects</a></li>
+                    
+                
+                    
+                    <li><a href="/blog/">Blog</a></li>
+                    
+                
+                    
+                    <li><a href="/thoughts/">Thoughts</a></li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<section class="section project-single">
+    <div class="container">
+        <article class="project">
+            <header>
+                <h1>Cloud Technologies for Proteomic Analysis</h1>
+                <div class="project-meta">
+                    
+                    
+                </div>
+            </header>
+
+            
+
+            <div class="project-content">
+                <h1 id="cloud-technologies-for-proteomic-analysis-of-adipogenesis">Cloud Technologies for Proteomic Analysis of Adipogenesis</h1>
+<h2 id="project-overview">Project Overview</h2>
+<p>This project evaluated the effectiveness of modern cloud technologies for conducting proteomic analysis, specifically focusing on temporal changes during adipogenesis (fat cell formation). We recreated visualizations from the paper &ldquo;A spatiotemporal proteomic map of human adipogenesis&rdquo; (Nature Metabolism, 2024) using Google Cloud Platform services.</p>
+<h2 id="research-context">Research Context</h2>
+<p>Abnormal adipogenesis is linked to major metabolic diseases including obesity, cardiovascular disease, and diabetes - leading causes of global morbidity and mortality. Understanding the molecular changes during fat cell development through proteomics can reveal new biomarkers and therapeutic targets for precision medicine approaches.</p>
+<h2 id="technical-implementation">Technical Implementation</h2>
+<p><strong>Cloud Services Used:</strong></p>
+<ul>
+<li>Google Cloud Platform (GCP)</li>
+<li>BigQuery for data processing</li>
+<li>Vertex AI with Python Jupyter Notebooks</li>
+<li>Google Compute Engine VMs</li>
+<li>GATK HaplotypeCaller for pipeline benchmarking</li>
+</ul>
+<p><strong>Analysis Pipeline:</strong></p>
+<ol>
+<li><strong>Preprocessing</strong>: Raw proteomic data processed through directDIA using Spectronaut</li>
+<li><strong>Data Processing</strong>: Import to BigQuery, cleanup and normalization with z-scores</li>
+<li><strong>Analysis</strong>: Hierarchical clustering and heatmap visualization of protein expression changes</li>
+</ol>
+<h2 id="key-findings">Key Findings</h2>
+<h3 id="scalability-performance">Scalability Performance</h3>
+<ul>
+<li>Demonstrated effective <strong>weak scaling</strong> across 1-16 participants</li>
+<li>Runtime remained nearly constant (~511-557 seconds) as sample size increased</li>
+<li><strong>Cost per participant decreased significantly</strong>: from $0.0308 (1 participant) to $0.0328 (16 participants)</li>
+</ul>
+<h3 id="security--compliance">Security &amp; Compliance</h3>
+<ul>
+<li>Implemented HIPAA-compliant practices despite low PHI risk</li>
+<li>Used GCP&rsquo;s default encryption for data in transit and at rest</li>
+<li>Applied de-identification methods and data aggregation techniques</li>
+<li>Enabled audit logging for traceability</li>
+</ul>
+<h2 id="impact--applications">Impact &amp; Applications</h2>
+<p>This project demonstrates that cloud technologies can efficiently handle complex proteomic workflows while maintaining cost-effectiveness at scale. The approach enables:</p>
+<ul>
+<li><strong>Reproducible research</strong> with version-controlled analyses</li>
+<li><strong>Collaborative analysis</strong> across research teams</li>
+<li><strong>Scalable processing</strong> for large-scale studies</li>
+<li><strong>Secure handling</strong> of sensitive biological data</li>
+</ul>
+<p>The work supports the development of precision medicine approaches for metabolic diseases by making advanced proteomic analysis more accessible and cost-effective for researchers.</p>
+<h2 id="technical-achievements">Technical Achievements</h2>
+<p>Successfully replicated the temporal protein expression heatmap from the original Nature Metabolism paper, validating that cloud-based pipelines can effectively handle sophisticated proteomic analyses while providing built-in scalability and cost benefits compared to traditional local computing approaches.</p>
+<h2 id="learn-more">Learn More</h2>
+<p><a href="https://github.com/phalpha/cloudcomputing_proteomicanalysis">Github Link</a>, contains some of the code and figures.</p>
+
+            </div>
+
+            
+        </article>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
+        </div>
+    </div>
+      
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</footer>
+</footer>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55830&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eddic Poetry Analysis | me, you, and the universe</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:55830/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="title-container">
+            <a href="http://localhost:55830/" class="site-title-link">
+                <h1 class="site-title">me, you, and the universe</h1>
+            </a>
+            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
+        </div>
+        <nav>
+            <ul>
+                
+                    
+                    <li><a href="/about/">About</a></li>
+                    
+                
+                    
+                    <li><a href="/projects/">Projects</a></li>
+                    
+                
+                    
+                    <li><a href="/blog/">Blog</a></li>
+                    
+                
+                    
+                    <li><a href="/thoughts/">Thoughts</a></li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<section class="section project-single">
+    <div class="container">
+        <article class="project">
+            <header>
+                <h1>Eddic Poetry Analysis</h1>
+                <div class="project-meta">
+                    
+                    
+                </div>
+            </header>
+
+            
+
+            <div class="project-content">
+                <h3 id="statistical-analysis-of-old-norse-eddic-poetry">Statistical Analysis of Old Norse Eddic Poetry</h3>
+<p>This digital humanities project analyzed recurring alliterative collocations in Old Norse eddic poetry to distinguish deliberate poetic devices from chance occurrences. The corpus comprises approximately 12,000 verses of mostly anonymous mythological and legendary poetry composed in medieval Scandinavia and associated colonies. Working as a Stanford CESTA fellow assisting classics postdoc James Parkhouse, I developed the computational framework to process and analyze these medieval texts.</p>
+<h3 id="project-context-and-motivation">Project Context and Motivation</h3>
+<p>Old Norse poetic meter operates on alliterating stressed syllables per line rather than fixed syllable counts, creating frequent combinations of alliterating words. Similar to modern English expressions like &ldquo;hearth and home&rdquo; or &ldquo;life and limb,&rdquo; these collocations carry rhetorical resonances beyond semantic meaning, offering insights into the aesthetics and worldviews of medieval composers and audiences. However, with finite words beginning with any letter, some combinations could recur by coincidence. The project used statistical testing to identify which alliterative combinations appeared more frequently than chance would predict, indicating deliberate poetic devices.</p>
+<h3 id="technical-implementation">Technical Implementation</h3>
+<p><strong>Data Compilation and Cleaning:</strong>
+The analysis began with manual compilation of alliterating stresses from each verse in the corpus. I developed comprehensive data cleaning procedures to handle corrupt verses with defective meter or indecipherable meaning resulting from centuries of manuscript transmission, while lemmatizing inflected forms to root forms for consistent analysis.</p>
+<p><strong>Data Processing Pipeline:</strong>
+Built automated systems using Python to process the cleaned manuscript data across 29 poems:</p>
+<ul>
+<li><strong>Lemmatization and Normalization</strong>: Developed algorithms to strip formatting artifacts and consolidate word variants, creating standardized root forms</li>
+<li><strong>Alliteration Classification</strong>: Implemented rule-based logic distinguishing simple consonant alliteration, vowel alliteration (treating all vowels as equivalent), and complex Nordic consonant clusters (&lsquo;sk&rsquo;, &lsquo;sp&rsquo;, &lsquo;st&rsquo; as distinct units)</li>
+<li><strong>Frequency Analysis</strong>: Created counting algorithms tracking consolidated root frequencies across the corpus</li>
+</ul>
+<p><strong>Co-occurrence Matrix Generation:</strong>
+Developed automated systems to generate contingency tables for all possible word pairs within alliterative lines, systematically identifying joint occurrences, single-word appearances, and absences to create comprehensive 2x2 contingency tables for statistical testing.</p>
+<p><strong>Statistical Analysis:</strong>
+Implemented Fisher&rsquo;s exact test using SciPy to evaluate the independence of two variables given their observed distribution. The pipeline generated contingency tables for each collocation with frequency ≥2, performed mass statistical testing, and applied conservative Bonferroni correction to establish a significance threshold of p = 0.00006.</p>
+<p><strong>Data Visualization:</strong>
+Created network representations using NetworkX with Jaccard similarity coefficients, where node sizes reflect word frequency and edge weights represent co-occurrence strength. Began experimenting with Gephi visualizations treating each significant collocate as the focal node of an ego network.</p>
+<h3 id="results">Results</h3>
+<p>The analysis identified 77 collocations meeting the conservative significance threshold, including highly significant pairs like &ldquo;vreiðr-vega&rdquo; (angry-fight, p &lt; 0.00001), &ldquo;regin-rök&rdquo; (gods-doom, p &lt; 0.00001), and &ldquo;skjöldungr-sköp&rdquo; (prince-fate, p &lt; 0.002). These findings provide quantitative evidence for deliberate formulaic techniques spanning multiple poems, suggesting established poetic formulas rather than coincidental combinations.</p>
+<p>The computational approach revealed patterns that traditional literary analysis had recognized qualitatively but never measured systematically, providing a foundation for further literary-critical analysis of these combinations&rsquo; poetic functions.</p>
+<hr>
+<p>I worked on the project as a Stanford CESTA fellow. I really enjoyed working in digital humanities!</p>
+<p><a href="https://github.com/phalpha/eddic_poetry">Github Link</a></p>
+
+            </div>
+
+            
+        </article>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
+        </div>
+    </div>
+      
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</footer>
+</footer>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
+</body>
+</html>

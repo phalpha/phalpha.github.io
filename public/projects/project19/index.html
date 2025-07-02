@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=55830&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Distance | me, you, and the universe</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:55830/css/main.min.2c1f9677f0b5ad9303c242705cc25a29cf11ab9a21690afc220c551e68808f68.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="title-container">
+            <a href="http://localhost:55830/" class="site-title-link">
+                <h1 class="site-title">me, you, and the universe</h1>
+            </a>
+            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
+        </div>
+        <nav>
+            <ul>
+                
+                    
+                    <li><a href="/about/">About</a></li>
+                    
+                
+                    
+                    <li><a href="/projects/">Projects</a></li>
+                    
+                
+                    
+                    <li><a href="/blog/">Blog</a></li>
+                    
+                
+                    
+                    <li><a href="/thoughts/">Thoughts</a></li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<section class="section project-single">
+    <div class="container">
+        <article class="project">
+            <header>
+                <h1>Digital Distance</h1>
+                <div class="project-meta">
+                    
+                    
+                </div>
+            </header>
+
+            
+
+            <div class="project-content">
+                <p><em>Accurate distance measurement using only smartphone sensors</em></p>
+<h2 id="overview">Overview</h2>
+<p>Digital Distance is an innovative web application that measures physical distances without conventional measuring tools. By leveraging smartphones&rsquo; native sensors (accelerometer, gyroscope, and gravity axes), it calculates distances through precise motion tracking algorithms. This project won <strong>Best Sensor Hack</strong> and <strong>2nd Best Use of Scriptr API</strong> at Space Apps NYC 2016.</p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Contactless Measurement</strong>: Calculate distances without physical tools</li>
+<li><strong>Smartphone Sensor Utilization</strong>: Uses built-in accelerometer, gyroscope, and gravity sensors</li>
+<li><strong>Real-time Calculation</strong>: Processes measurements instantly</li>
+<li><strong>Data Visualization</strong>: Provides clear measurement results</li>
+<li><strong>Cross-platform</strong>: Works on any smartphone with a modern browser</li>
+</ul>
+<h2 id="sensor-data-processing">Sensor Data Processing</h2>
+<ol>
+<li>Capture raw sensor data from accelerometer and gyroscope</li>
+<li>Calculate velocity through integration of acceleration</li>
+<li>Compute distance through integration of velocity</li>
+<li>Apply calibration and noise reduction</li>
+<li>Return precise distance measurement</li>
+</ol>
+<h2 id="scriptr-implementation">Scriptr Implementation</h2>
+<p>Digital Distance leverages Scriptr.io for backend processing:</p>
+<ul>
+<li><strong>Sensor Data Handling</strong>: Processes raw data from mobile sensors</li>
+<li><strong>API Integration</strong>: Connects smartphone sensors to calculation logic</li>
+<li><strong>Server-side Execution</strong>: Runs computationally intensive algorithms</li>
+<li><strong>File Processing</strong>: Handles data uploads from mobile devices</li>
+</ul>
+<p>`</p>
+<h2 id="technical-challenges">Technical Challenges</h2>
+<ul>
+<li><strong>Sensor Noise</strong>: Filtering inconsistent sensor readings</li>
+<li><strong>Integration Drift</strong>: Minimizing error accumulation over time</li>
+<li><strong>Device Variability</strong>: Accounting for different smartphone sensor qualities</li>
+<li><strong>Motion Calibration</strong>: Handling different movement patterns</li>
+<li><strong>Real-time Processing</strong>: Optimizing for mobile performance</li>
+</ul>
+<h2 id="awards--recognition">Awards &amp; Recognition</h2>
+<p><strong>Best Sensor Hack</strong> - Space Apps NYC 2016<br>
+<strong>2nd Best Use of Scriptr API</strong> - Space Apps NYC 2016</p>
+<h2 id="technology-stack">Technology Stack</h2>
+<ul>
+<li>Javascript</li>
+<li>Scriptr</li>
+<li>Mobile Sensors</li>
+</ul>
+<hr>
+<p><a href="https://github.com/asp3/DigitalDistance"><img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github" alt="GitHub Repository"></a></p>
+<p><a href="https://web.archive.org/web/20170516214754/https://blog.scriptr.io/innovation-at-nasa-space-apps-hackathon-sponsored-by-scriptr-io/">Blog Post by Scriptr</a></p>
+<p><em>Developed for NASA Space Apps Challenge 2016 - New York City, with Abhishek Patel and Kunal Adhia</em></p>
+
+            </div>
+
+            
+        </article>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
+        </div>
+    </div>
+      
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</footer>
+</footer>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
+</body>
+</html>
