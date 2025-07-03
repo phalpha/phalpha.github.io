@@ -11,7 +11,7 @@ This interactive data visualization website examines Stanford University's finan
 
 The analysis reveals significant financial ties, including over $60 million in funding from top weapons manufacturers like Boeing (52 projects, $40+ million) and Lockheed Martin (31 projects, $10+ million) since 2002. The visualization shows that the vast majority of proposed projects receive funding, highlighting the consistency of these institutional relationships.
 
-**Visit the website [here](phalpha.github.io/recon_on_war)!**
+**Visit the website [here](https://phalpha.github.io/recon_on_war)!**
 
 **Technical Implementation & Skill Development:**
 - **Data Processing with Tableau**: Extensively used Tableau for data cleaning, transformation, and exploratory analysis of complex funding datasets. This involved parsing multiple data sources, standardizing company names and project categories, calculating funding totals and project counts, and preparing the data for web-based visualization. The Tableau work provided hands-on experience with data preparation workflows and statistical analysis.
