@@ -4,7 +4,7 @@ title: "The Nature of the Scientific Debate around Human Nature: Lewontin, Owens
 date: 2023-08-15
 tags: ["science", "philosophy", "history"]
 categories: ["Science", "Philosophy", "History"]
-image: "images/blog1_im1.jpg"  # Path relative to bundle
+image: "images/spandrel.jpg"  # Path relative to bundle
 summary: "a historical and philosophical dive into what it means to be human"
 draft: false
 ---

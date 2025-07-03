@@ -2,149 +2,149 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on me, you, and the universe</title>
-    <link>http://localhost:52985/projects/</link>
+    <link>http://localhost:57716/projects/</link>
     <description>Recent content in Projects on me, you, and the universe</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:52985/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57716/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Convex Approach to Two-Layer Convolutional Neural Networks</title>
-      <link>http://localhost:52985/projects/project10/</link>
+      <link>http://localhost:57716/projects/project10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project10/</guid>
+      <guid>http://localhost:57716/projects/project10/</guid>
       <description>CS 231N Project</description>
     </item>
     <item>
       <title>A Recon on War</title>
-      <link>http://localhost:52985/projects/project8/</link>
+      <link>http://localhost:57716/projects/project8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project8/</guid>
+      <guid>http://localhost:57716/projects/project8/</guid>
       <description>mapping defense relationships, from the US to Stanford</description>
     </item>
     <item>
       <title>Akūpāra (अकूपार)</title>
-      <link>http://localhost:52985/projects/project18/</link>
+      <link>http://localhost:57716/projects/project18/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project18/</guid>
+      <guid>http://localhost:57716/projects/project18/</guid>
       <description>communicating with the boundless world turtle</description>
     </item>
     <item>
       <title>Automatic Classification of C. elegans</title>
-      <link>http://localhost:52985/projects/project14/</link>
+      <link>http://localhost:57716/projects/project14/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project14/</guid>
+      <guid>http://localhost:57716/projects/project14/</guid>
       <description>A Machine Learning Approach</description>
     </item>
     <item>
       <title>Avalanche of Goodness</title>
-      <link>http://localhost:52985/projects/project17/</link>
+      <link>http://localhost:57716/projects/project17/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project17/</guid>
+      <guid>http://localhost:57716/projects/project17/</guid>
       <description>art and computer, a pair like lightning and thunder</description>
     </item>
     <item>
       <title>Cloud Technologies for Proteomic Analysis</title>
-      <link>http://localhost:52985/projects/project11/</link>
+      <link>http://localhost:57716/projects/project11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project11/</guid>
+      <guid>http://localhost:57716/projects/project11/</guid>
       <description>traversing the clouds</description>
     </item>
     <item>
       <title>Digital Distance</title>
-      <link>http://localhost:52985/projects/project19/</link>
+      <link>http://localhost:57716/projects/project19/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project19/</guid>
+      <guid>http://localhost:57716/projects/project19/</guid>
       <description>measuring distances by just moving your phone</description>
     </item>
     <item>
       <title>Door Authorization Control Apparatus</title>
-      <link>http://localhost:52985/projects/project2/</link>
+      <link>http://localhost:57716/projects/project2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project2/</guid>
+      <guid>http://localhost:57716/projects/project2/</guid>
       <description>License Plate detection with a microcontroller</description>
     </item>
     <item>
       <title>Eddic Poetry Analysis</title>
-      <link>http://localhost:52985/projects/project5/</link>
+      <link>http://localhost:57716/projects/project5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project5/</guid>
+      <guid>http://localhost:57716/projects/project5/</guid>
       <description>statistics and computational humanities</description>
     </item>
     <item>
       <title>Erythrocyte Analysis</title>
-      <link>http://localhost:52985/projects/project4/</link>
+      <link>http://localhost:57716/projects/project4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project4/</guid>
+      <guid>http://localhost:57716/projects/project4/</guid>
       <description>&lt;p&gt;I will add this soon!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Essential Tremor Measurement and Analysis</title>
-      <link>http://localhost:52985/projects/project3/</link>
+      <link>http://localhost:57716/projects/project3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project3/</guid>
+      <guid>http://localhost:57716/projects/project3/</guid>
       <description>measuring hand movement with a Raspberry Pi</description>
     </item>
     <item>
       <title>Exploration of Pharma, Finance, and Healthcare</title>
-      <link>http://localhost:52985/projects/project12/</link>
+      <link>http://localhost:57716/projects/project12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project12/</guid>
+      <guid>http://localhost:57716/projects/project12/</guid>
       <description>CS 145 Project</description>
     </item>
     <item>
       <title>Glyde</title>
-      <link>http://localhost:52985/projects/project21/</link>
+      <link>http://localhost:57716/projects/project21/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project21/</guid>
+      <guid>http://localhost:57716/projects/project21/</guid>
       <description>like swype but more fun</description>
     </item>
     <item>
       <title>Health Indices and Satellites</title>
-      <link>http://localhost:52985/projects/project7/</link>
+      <link>http://localhost:57716/projects/project7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project7/</guid>
+      <guid>http://localhost:57716/projects/project7/</guid>
       <description>maternal and child health prediction using satellite imagery</description>
     </item>
     <item>
       <title>Indoor Positioning System</title>
-      <link>http://localhost:52985/projects/project1/</link>
+      <link>http://localhost:57716/projects/project1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project1/</guid>
+      <guid>http://localhost:57716/projects/project1/</guid>
       <description>Coordinating Cameras and Computer Vision for Positioning</description>
     </item>
     <item>
       <title>Modeling the Conservation of Florida Manatees</title>
-      <link>http://localhost:52985/projects/project9/</link>
+      <link>http://localhost:57716/projects/project9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project9/</guid>
+      <guid>http://localhost:57716/projects/project9/</guid>
       <description>Using POMDP Methods</description>
     </item>
     <item>
       <title>Paper Vision</title>
-      <link>http://localhost:52985/projects/project20/</link>
+      <link>http://localhost:57716/projects/project20/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project20/</guid>
+      <guid>http://localhost:57716/projects/project20/</guid>
       <description>so much is possible with just some paper and some vision!</description>
     </item>
     <item>
       <title>PDF reader easier</title>
-      <link>http://localhost:52985/projects/project13/</link>
+      <link>http://localhost:57716/projects/project13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project13/</guid>
+      <guid>http://localhost:57716/projects/project13/</guid>
       <description>&lt;p&gt;in progress&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal Website</title>
-      <link>http://localhost:52985/projects/project15/</link>
+      <link>http://localhost:57716/projects/project15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project15/</guid>
+      <guid>http://localhost:57716/projects/project15/</guid>
       <description>this site - an ongoing project!</description>
     </item>
     <item>
       <title>Sequence Analysis of Genes</title>
-      <link>http://localhost:52985/projects/project16/</link>
+      <link>http://localhost:57716/projects/project16/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52985/projects/project16/</guid>
+      <guid>http://localhost:57716/projects/project16/</guid>
       <description>Landoltia Punctata aka Duckweed</description>
     </item>
   </channel>

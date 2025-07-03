@@ -3,7 +3,7 @@ title: "Some Mathematical Poetry"
 date: 2024-03-05
 tags: ["science", "philosophy", "history"]
 categories: ["Mathematics", "Poetry"]
-image: "images/blog1_im1.jpg"  # Path relative to bundle
+image: "images/montecarlo.jpg"  # Path relative to bundle
 summary: "math and poetry? together?"
 draft: false
 ---

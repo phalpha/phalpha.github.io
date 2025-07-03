@@ -5,6 +5,8 @@ draft: false
 ---
 
 ## "Who Am I?"
+*Here, I write some words of reflection on the question of who I am, and who I am becoming - click the arrow below to view!*
+
 {{< collapsible >}}
 
 In January 2020, during my first year at Stanford University, I took an elective class called "Heartfulness, Mindfulness, Compassion, and Responsibility." The homework before the first class was to answer the following question: "Who are you?"
@@ -28,7 +30,10 @@ The last line is the one I am now trying to hold onto most closely - "I am imper
 
 
 
-## A timeline 
+## Timeline
+
+*This timeline highlights some of the roles I have had since entering college -  click the arrow below to view!*
+
 <details class="collapsible-section">
   <summary class="section-title">
   </summary>
@@ -38,66 +43,71 @@ The last line is the one I am now trying to hold onto most closely - "I am imper
 {{< timeline_event 
     date="2000" 
     title="Hello World!" 
-    image="images/timeline/friends.jpg" 
+    image="images/timeline/kid.jpg" 
 >}}
 
 I was born on November 30, 2000. Two of my birthday twins are Filipino revolutionary leader Andres Bonifacio (1863-1897), and the highest-rated chess grandmaster Magnus Carlsen (1990 - present). 
 {{< /timeline_event >}}
 
 {{< timeline_event 
-    date="2003" 
-    title="Just a Central Jersey Brown Boy" 
-    image="images/timeline/friends.jpg" 
+    date="2019" 
+    title="Started College" 
+    image="images/timeline/stanford.jpg" 
 >}}
-My brother was born in 2003, and my family moved to Monroe, New Jersey - what I would call my hometown. Growing up in the central Jersey suburbs with my parents, brother, and active neighborhood community and friends really shaped my childhood.
-{{< /timeline_event >}}
-
-{{< timeline_event 
-    date="2010" 
-    title="A Trip to India" 
-    image="images/timeline/friends.jpg" 
->}}
-
-Every few years, my brother and I spent our summers in India.
-{{< /timeline_event >}}
-
-{{< timeline_event 
-    date="2016" 
-    title="Trying out Research" 
-    image="images/timeline/friends.jpg" 
->}}
-
-I got my introduction to scientific research with the Partners in Science program, where the Liberty Science Center funded me to work with the Wireless Information Networks Laboratory (WINLAB) at Rutgers University. After a few months of learning, experimentation, and discovery, I found myself accepting a Second Best Paper award at MIT IEEE Undergraduate Research Conference. This was a formative experience in developing my passion for science, research, and discovery.
-{{< /timeline_event >}}
-
-{{< timeline_event 
-    date="2017" 
-    title="Playing Soccer" 
-    image="images/timeline/friends.jpg" 
->}}
-
-I had to put a picture of me playing sports somewhere in my timeline because being an athlete was such a big part of growing up for me. My athletic peak was unfortunately high school (until  my mid-to-late 20s second peak). 
+Fast forward over 18 years -- In September 2019, I started school at Stanford! California soon became my home.
 
 {{< /timeline_event >}}
 
 {{< timeline_event 
-    date="June 2023" 
-    title="Degree 1 - Complete!" 
-    image="images/timeline/friends.jpg" 
+    date="2020-2021" 
+    title="SGTC Research Assistant" 
+    image="images/timeline/sgtc.png" 
 >}}
-I finished my B.S. in Mathematical and Computational Science at Stanford! I also completed a Minor in Comparative Studies in Race and Ethnicity. I was awarded the Robert M. Golden Medal for Excellence in the Humanities and Creative Arts. 
+From 2020 to 2021, I was a BioX research intern, and then a research assistant at Stanford Genome Technology Center, working on measuring red blood cell morphologies using AI for ME/CFS research.
+{{< /timeline_event >}}
+
+{{< timeline_event 
+    date="2021" 
+    title="AC SWE Intern" 
+    image="images/timeline/ac.png" 
+>}}
+ In the summer of 2021, I worked at Accountability Counsel (AC) in San Francisco where I got to build cool tools that automatically gather information about international development projects from across the web. I also played detective, researching how big agriculture companies affect local communities around the world and sharing what I discovered. 
+{{< /timeline_event >}}
+
+{{< timeline_event 
+    date="2022" 
+    title="CSRE Race and Tech Fellow" 
+    image="images/timeline/asam.png" 
+>}}
+In the summer and fall of 2022, I worked as a Stanford CSRE Race and Tech Fellow on a project to document, analyze, and assess Asian American - related news. My team worked with Dr. Borja's Virulent Hate Project from University of Michigan, contributing to their database, website, and research on anti-Asian sentiments in news media coverage. 
+
+{{< /timeline_event >}}
+
+{{< timeline_event 
+    date="2023" 
+    title="DSSG Fellow" 
+    image="images/timeline/undergrad.jpg" 
+>}}
+In June 2023, I graduated with a B.S. in Mathematical and Computational Science and an Interdisciplinary Honors in Comparative Studies in Race and Ethnicitiy in 2023! 
+{{< /timeline_event >}}
+
+{{< timeline_event 
+    date="2023" 
+    title="DSSG Fellow" 
+    image="images/timeline/landsat.png" 
+>}}
+In the summer of 2023, I worked with the Stanford Data Science department as a Data Science for Social Good Fellow. This research project explores the use of machine learning with satellite imagery and other publicly available geotagged data for the estimation of key indicators of maternal and child health (MCH) indicator status. 
 
 {{< /timeline_event >}}
 
 
 
-
-    {{< timeline_event
+{{< timeline_event
         date="2025"
-        title="Degree 2 - Complete!" 
-        image="images/timeline/friends.jpg" 
+        title="2023-2025!" 
+        image="images/timeline/masters.png" 
 >}}
-I finished my Master's degree in Computer Science at Stanford! My concentration was Computational Biology, and I also took coursework in Artificial Intelligence, Design, and Science and Society.
+I started my Master's degree in 2023. Near the start of 2024, I had to take a leave to tend to family matters. When I returned to finish classes in 2025, I also spent some time exploring writing (check out my blog) and education (facilitated a class and a book club) on the themes of science, technology, and society. I finally graduated with my M.S. in Computer Science in June 2025!
 
  {{< /timeline_event >}}
 
@@ -110,14 +120,13 @@ I finished my Master's degree in Computer Science at Stanford! My concentration 
 ---
 
 ## Some Photos
-
-
+*Last year, I visited my friend's musical performance. She was acting as a wedding photographer, and a song she sang in the musical featured the following line: "people age but pictures never change". There's something about looking at a picture that captures a memorable moment, however, that stirs my heart in a special way. In this sense, these pictures may never change, but merely witnessing their existence changes me. Click the arrow below to view a few!*
 
 <details class="collapsible-section">
   <summary class="section-title">
   </summary>
   <div class="section-content">
-Last year, I visited my friend's musical performance. She was acting as a wedding photographer, and a song she sang in the musical featured the following line: "people age but pictures never change". These pictures below may be capturing cherished moments in an unchanging way, but somehow every glance I share with them seems to stir my heart in some way. In this sense, these pictures may never change, but their existence has changed me.
+
 
 
 {{< gallery >}}
@@ -130,7 +139,9 @@ Last year, I visited my friend's musical performance. She was acting as a weddin
 
 ---
 
-## What Now?
+## Now
+
+*What Am I doing now? Click the arrow below to read!*
 
 {{< collapsible  >}}
 

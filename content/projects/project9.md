@@ -5,7 +5,6 @@ tags:
 summary: "Using POMDP Methods"
 ---
 
-# Modeling Strategies for the Conservation of Florida Manatees using POMDP Methods
 
 ## Overview
 

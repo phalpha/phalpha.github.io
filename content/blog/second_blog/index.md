@@ -3,7 +3,7 @@ title: "Do Names Matter? Health and Diagnosis of Disease"
 date: 2025-02-15
 tags: ["science", "history", "health"]
 categories: ["Science", "History", "Health"]
-image: "images/blog2_im1.jpg"  # Path relative to bundle
+image: "images/inclinevillage.jpg"  # Path relative to bundle
 summary: "what is the story of myalgic encephaloymelitis?"
 draft: false
 ---
