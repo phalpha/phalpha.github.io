@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=53308&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 | me, you, and the universe</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:53308/css/main.min.f1f89286e8f7af71adb4caeed022f966fe155110dfdd0625822ad4a5d74e84ae.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="title-container">
+            <a href="http://localhost:53308/" class="site-title-link">
+                <h1 class="site-title">me, you, and the universe</h1>
+            </a>
+            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
+        </div>
+        <nav>
+            <ul>
+                
+                    
+                    <li><a href="/about/">About</a></li>
+                    
+                
+                    
+                    <li><a href="/projects/">Projects</a></li>
+                    
+                
+                    
+                    <li><a href="/writings/">Writings</a></li>
+                    
+                
+                    
+                    <li><a href="/thoughts/">Thoughts</a></li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<div class="container">
+    <section class="section writings">
+        <h1>Posts tagged: "2023"</h1>
+        
+        <div class="tag-filter">
+    <h3>Filter by Topic</h3>
+    <div class="tag-cloud">
+        
+            <a href="?tag=health" 
+               class="tag "
+               data-tag="health">
+                Health (1)
+            </a>
+        
+            <a href="?tag=history" 
+               class="tag "
+               data-tag="history">
+                History (3)
+            </a>
+        
+            <a href="?tag=life" 
+               class="tag "
+               data-tag="life">
+                Life (1)
+            </a>
+        
+            <a href="?tag=philosophy" 
+               class="tag "
+               data-tag="philosophy">
+                Philosophy (2)
+            </a>
+        
+            <a href="?tag=science" 
+               class="tag "
+               data-tag="science">
+                Science (3)
+            </a>
+        
+        <a href="/writings" class="tag clear-filter">Clear Filters</a>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedTag = urlParams.get('tag');
+    
+    if (selectedTag) {
+        
+        document.querySelectorAll('.tag').forEach(tag => {
+            if (tag.dataset.tag === selectedTag) {
+                tag.classList.add('active');
+            }
+        });
+        
+        
+        document.querySelectorAll('.post-card').forEach(post => {
+            const postTags = post.dataset.tags.split(' ');
+            if (!postTags.includes(selectedTag)) {
+                post.style.display = 'none';
+            }
+        });
+    }
+});
+</script>
+        
+        <div class="post-list">
+            
+        </div>
+    </section>
+</div>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
+        </div>
+    </div>
+      
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</footer>
+</footer>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
+</body>
+</html>

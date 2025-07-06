@@ -1,19 +1,67 @@
+
+
+
 /* ===== COLOR SCHEME ===== */
 :root {
-    --cerulean: #2A5DB0;
-    --cerulean-light: #4A7BD0;
-    --purple: #800080;
-    --purple-light: #A040A0;
-    --forest-green: #228B22;
-    --forest-green-light: #3CA33C;
-    --lavender: #E6E6FA;
-    --lavender-dark: #D6D6EA;
-    --text: #333333;
-    --text-light: #555555;
-    --white: #FFFFFF;
-    --off-white: #F9F9FB;
+    --deep-forest: #1a2e1c;       /* Very dark green */
+    --pine-green: #2a5d38;        /* Dark forest green */
+    --moss-green: #4a7d54;        /* Medium forest green */
+    --forest-lake: #1e3a5f;       /* Deep blue-green */
+    --lake-light: #2a5d8a;        /* Lighter blue-green */
+    --forest-berry: #5d2a5d;      /* Deep purple */
+    --berry-light: #7d4a7d;       /* Lighter purple */
+    --birch-bark: #f0e6d2;        /* Light warm tan */
+    --bark-dark: #e0d6c2;         /* Slightly darker tan */
+    --charcoal: #222;             /* Almost black */
+    --stone: #555;                /* Medium gray */
+    --snow: #fff;                 /* Pure white */
+    --autumn: #d98c20;            /* Amber for accents */
 }
 
+/* ===== UPDATED VARIABLE MAPPING ===== */
+:root {
+    /* Reassigning variables to forest theme */
+    --cerulean: var(--forest-lake);
+    --cerulean-light: var(--lake-light);
+    --purple: var(--forest-berry);
+    --purple-light: var(--berry-light);
+    --forest-green: var(--pine-green);
+    --forest-green-light: var(--moss-green);
+    --lavender: var(--birch-bark);
+    --lavender-dark: var(--bark-dark);
+    --text: var(--charcoal);
+    --text-light: var(--stone);
+    --white: var(--snow);
+    --off-white: #f8f5f0;         /* Warm parchment color */
+    --amber: var(--autumn);       /* Autumn accent color */
+}
+
+
+
+/* Minimal header for subpages */
+.about header,
+.projects header,
+.writings header,
+.thoughts header {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 1px solid var(--lavender);
+}
+
+.about .site-title,
+.projects .site-title,
+.writings .site-title,
+.thoughts .site-title {
+    color: var(--amber);
+    font-size: 2.5rem; /* Smaller on subpages */
+}
+
+.about .site-subtitle,
+.projects .site-subtitle,
+.writings .site-subtitle,
+.thoughts .site-subtitle {
+    color: var(--text-light);
+}
 /* ===== BASE STYLES ===== */
 * {
     margin: 0;
@@ -26,9 +74,13 @@ body {
     font-size: 18px;
     line-height: 1.7;
     color: var(--text);
-    background-color: var(--off-white);
-    background-image: linear-gradient(135deg, var(--lavender) 0%, var(--off-white) 100%);
-    min-height: 100vh;
+    background-color: #f8f5f0; /* Warm off-white */
+    background-image: linear-gradient(
+        135deg, 
+        var(--birch-bark) 0%, 
+        #f8f5f0 100%
+    );
+     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -88,7 +140,7 @@ img {
 
 /* ===== HEADER ===== */
 header {
-    background: var(--white);
+    background: rgba(26, 46, 28, 0.95); /* Deep forest green */
     padding: 1rem 0; /* Reduced padding */
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     position: relative; /* Changed from sticky */
@@ -113,7 +165,7 @@ header {
 .site-title-link {
     display: inline-block; /* Keeps element tight around title */
     text-decoration: none !important;
-    color: inherit !important;
+    color: var(--birch-bark) !important; /* Light birch color */
     border-bottom: none !important;
     transition: transform 0.2s ease;
 }
@@ -152,7 +204,7 @@ main {
     font-family: 'Playfair Display', serif;
     font-size: 3.2rem;
     font-weight: 700;
-    color: var(--purple);
+    color: var(--snow);
     text-align: center;
     margin-bottom: 0.5rem;
     letter-spacing: 1px;
@@ -161,7 +213,7 @@ main {
 .site-subtitle {
     text-align: center;
     font-size: 1.2rem;
-    color: var(--text-light);
+    color: var(--off-white);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -184,14 +236,14 @@ nav li {
 nav a {
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--cerulean);
+    color: var(--birch-bark) !important;
     padding: 0.5rem 0;
     border-bottom: 3px solid transparent;
 }
 
 nav a:hover {
-    color: var(--cerulean-light);
-    border-bottom: 3px solid var(--cerulean-light);
+     color: var(--autumn) !important; /* Autumn accent */
+    border-bottom-color: var(--autumn);
 }
 
 /* ===== MAIN CONTENT ===== */
@@ -211,7 +263,7 @@ main {
     margin-bottom: 1.5rem;
 }
 .intro h2 {
-    color: var(--forest-green);
+    color: var(--forest-green-light);
     margin-bottom: 0.0rem;
 }
 
@@ -224,12 +276,13 @@ main {
 
 /* ===== SECTIONS ===== */
 .section {
-    background: var(--white);
     border-radius: 12px;
     padding: 3rem;
     margin-bottom: 3rem;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
+    background: var(--off-white); /* Light birch background */
+    border-color: var(--pine-green) !important;
+    box-shadow: 0 6px 16px rgba(26, 46, 28, 0.1);
 }
 
 .section:hover {
@@ -241,18 +294,57 @@ main {
 }
 
 .projects {
-    border-top: 6px solid var(--forest-green);
+    border-top: 6px solid var(--white);
 }
+
 
 .gallery {
     border-top: 6px solid var(--purple);
 }
 
-.blog {
+.writings {
     border-top: 6px solid var(--lavender-dark);
 }
 
 /* ===== PROJECTS ===== */
+.project-single .project {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 12px;
+    padding: 3rem;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border: 1px solid var(--bark-dark);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Light background header styling */
+.project-single header {
+    background: rgba(240, 230, 210, 0.8); /* Light birch background */
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--autumn);
+}
+
+.project-single header h1 {
+    color: var(--deep-forest);
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.project-single header h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: var(--autumn);
+    border-radius: 2px;
+}
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -261,7 +353,8 @@ main {
 }
 
 .project-card {
-    background: var(--off-white);
+    background: var(--stone);
+    border-color: var(--cerulean-light);
     border-radius: 8px;
     padding: 1.5rem;
     transition: transform 0.3s ease;
@@ -274,6 +367,8 @@ main {
 .project-card h3 {
     margin-bottom: 0.8rem;
     color: var(--cerulean);
+    border-color: var(--cerulean-light);
+
 }
 
 .project-meta {
@@ -311,12 +406,52 @@ main {
 }
 
 /* ===== BLOG ===== */
+.writings-single .post {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 12px;
+    padding: 3rem;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    border: 1px solid var(--bark-dark);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Light background header styling */
+.writings-single header {
+    background: rgba(240, 230, 210, 0.8); /* Light birch background */
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--forest-berry);
+}
+
+.writings-single header h1 {
+    color: var(--deep-forest);
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.writings-single header h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background: var(--forest-berry);
+    border-radius: 2px;
+}
+
 .post-card {
     display: flex;
     gap: 2rem;
     margin-bottom: 3rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--lavender);
+
 }
 
 .post-image {
@@ -345,16 +480,22 @@ main {
     font-weight: 600;
     margin-right: 0.5rem;
     margin-top: 0.5rem;
+    color: var(--birch-bark) !important;
 }
 
 .science { background: var(--cerulean-light); color: white; }
 .technology { background: var(--forest-green-light); color: white; }
 .politics { background: var(--purple-light); color: white; }
 .history { background: #9C27B0; color: white; }
+.life { background: #DE3163; color: white; }
+.philosophy { background: #FFBF00; color: white;}
+.art { background: #9FE2BF; color: white; }
+.health { background: #FF7F50; color: white;}
+
 
 /* ===== FOOTER ===== */
 footer {
-    background: var(--white);
+    background: var(--off-white);
     padding: 3rem 0;
     text-align: center;
     margin-top: 4rem;
@@ -370,7 +511,7 @@ footer {
 .button {
     display: inline-block;
     padding: 0.8rem 1.8rem;
-    background: var(--forest-green);
+    background: var(--pine-green);
     color: white;
     border-radius: 30px;
     font-weight: 600;
@@ -380,7 +521,7 @@ footer {
 }
 
 .button:hover {
-    background: var(--forest-green-light);
+    background: var(--moss-green);
     transform: translateY(-3px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -858,7 +999,7 @@ img[src]:not([src=""]) {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: var(--purple-light);
+    background: var(--forest-berry);
     left: 50%;
     margin-left: -2px;
     border-radius: 2px;
@@ -876,7 +1017,7 @@ img[src]:not([src=""]) {
 
 .timeline-date {
     position: absolute;
-    background: var(--purple);
+    background: var(--forest-berry);
     color: white;
     padding: 0.6rem 1.8rem;
     border-radius: 30px;
@@ -969,7 +1110,8 @@ img[src]:not([src=""]) {
     position: absolute;
     width: 24px;
     height: 24px;
-    background: var(--purple);
+    background: var(--forest-berry);
+    border-color: var(--birch-bark);
     border: 4px solid var(--white);
     border-radius: 50%;
     top: 50%;
@@ -1105,7 +1247,7 @@ img[src]:not([src=""]) {
 /* Section-specific title styling */
 .about .container h1:first-child,
 .projects .container h1:first-child,
-.blog .container h1:first-child {
+.writings .container h1:first-child {
     padding-top: 1rem;
     margin-bottom: 2.5rem;
     position: relative;
@@ -1116,7 +1258,7 @@ img[src]:not([src=""]) {
 /* Decorative underline for titles */
 .about .container h1:first-child::after,
 .projects .container h1:first-child::after,
-.blog .container h1:first-child::after {
+.writings .container h1:first-child::after {
     content: "";
     display: block;
     width: 80px;
@@ -1129,7 +1271,7 @@ img[src]:not([src=""]) {
 
 .about .container h1:first-child:hover::after,
 .projects .container h1:first-child:hover::after,
-.blog .container h1:first-child:hover::after {
+.writings .container h1:first-child:hover::after {
     width: 120px;
 }
 
@@ -1137,7 +1279,7 @@ img[src]:not([src=""]) {
 @media (max-width: 768px) {
     .about .container h1:first-child,
     .projects .container h1:first-child,
-    .blog .container h1:first-child {
+    .writings .container h1:first-child {
         font-size: 2.3rem;
     }
 
@@ -1183,6 +1325,7 @@ img[src]:not([src=""]) {
     font-size: 1rem;
     line-height: 1.5;
     flex-grow: 1;
+
 }
 
 .thought-meta {
@@ -1212,7 +1355,7 @@ img[src]:not([src=""]) {
 }
 
 .thought-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     padding: 1.8rem;
@@ -1280,7 +1423,7 @@ img[src]:not([src=""]) {
 }
 
 .collapsible {
-  background: transparent;
+  background: var(--purple-light);
 }
 
 .collapsible > summary {
@@ -1296,6 +1439,8 @@ img[src]:not([src=""]) {
 
 .collapsible > summary:hover {
   background: rgba(230, 230, 250, 0.3);
+    background: var(--purple-light);
+
 }
 
 .collapsible > summary::-webkit-details-marker {
@@ -1428,3 +1573,23 @@ img[src]:not([src=""]) {
         height: auto;
     }
 }
+
+/* ===== DARK TEXT CONTRAST ===== */
+h1, h2, h3, h4, 
+p, li, 
+.timeline-description, 
+.post-content {
+    color: var(--charcoal);
+}
+
+/* ===== LINK COLORS ===== */
+a {
+    color: var(--forest-lake);
+}
+
+a:hover {
+    color: var(--lake-light);
+}
+
+
+

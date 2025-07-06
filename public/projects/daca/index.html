@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=57716&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Authorization Control Apparatus | me, you, and the universe</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://localhost:57716/css/main.min.f1f89286e8f7af71adb4caeed022f966fe155110dfdd0625822ad4a5d74e84ae.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="title-container">
+            <a href="http://localhost:57716/" class="site-title-link">
+                <h1 class="site-title">me, you, and the universe</h1>
+            </a>
+            <div class="site-subtitle">introspections and extrospections, meditations and expositions</div>
+        </div>
+        <nav>
+            <ul>
+                
+                    
+                    <li><a href="/about/">About</a></li>
+                    
+                
+                    
+                    <li><a href="/projects/">Projects</a></li>
+                    
+                
+                    
+                    <li><a href="/writings/">Writings</a></li>
+                    
+                
+                    
+                    <li><a href="/thoughts/">Thoughts</a></li>
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        
+<section class="section project-single">
+    <div class="container">
+        <article class="project">
+            <header>
+                <h1>Door Authorization Control Apparatus</h1>
+                <div class="project-meta">
+                    <span class="date">June 1, 2018</span>
+                    
+                </div>
+            </header>
+
+            
+
+            <div class="project-content">
+                <p>Okay this was a project my friend and I worked on for a year (2018 in high school), and I really learned a lot from it (how to connect machine learning software to microcontrollers like the Jetson TK1, for example), but somehow we both are unable to locate our source code, videos for demo, or our documentation! The excuse we have is because we both placed it on our school emails from high school which we no longer have access to, but I have a feeling I can locate this somewhere else. Keeping this project page up because this was a project I was proud of, so hopefully I will have a more clear write-up soon!</p>
+
+            </div>
+
+            
+        </article>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>Thank you for visiting my website! <br>Follow me (Poojit Hegde) on  <a href="https://linkedin.com/in/phalpha" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/phalpha" target="_blank">GitHub</a>!</p>
+        </div>
+    </div>
+      
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption"></div>
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const caption = document.querySelector('.lightbox .caption');
+        const closeBtn = document.querySelector('.close-btn');
+        
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.href;
+                caption.textContent = this.querySelector('img').alt;
+            });
+        });
+        
+        
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+        
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+        
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+        });
+    });
+    </script>
+</footer>
+</footer>
+    
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],  
+      inlineMath: [['\\(', '\\)']]                  
+    },
+    loader:{
+      load: ['ui/safe']
+    },
+  };
+</script>
+  
+</body>
+</html>

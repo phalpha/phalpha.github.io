@@ -9,12 +9,7 @@
         
         <br>
 
-        <p>{{ .Site.Params.introSubtitle2}}</p>
-
-                <!-- Add the fractal forest animation here -->
-
-        
-       <!-- <img src="/images/blog/blog1_im1.jpg" alt="abc"> -->
+        <p><em>{{ .Site.Params.introSubtitle2}}</em></p>
     </section>
     {{ if .Site.Params.showAbout }}
     <section id="about" class="section about">
@@ -32,15 +27,15 @@
     </section>
     {{ end }}
     {{ if .Site.Params.showBlog }}
-    <section id="blog" class="section blog">
-        <h2>Recent Blog Posts</h2>
+    <section id="writings" class="section writings">
+        <h2>Recent Writings</h2>
         <div class="post-list">
-            {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+            {{ range first 3 (where .Site.RegularPages "Section" "writings") }}
                 {{ .Render "summary" }}
             {{ end }}
         </div>
         <div style="text-align: center; margin-top: 2rem;">
-            <a href="/blog" class="button">View All Posts</a>
+            <a href="/writings" class="button">View All Posts</a>
         </div>
     </section>
     {{ end }}
