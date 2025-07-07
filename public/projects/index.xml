@@ -2,150 +2,150 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on me, you, and the universe</title>
-    <link>http://localhost:58501/projects/</link>
+    <link>http://localhost:53809/projects/</link>
     <description>Recent content in Projects on me, you, and the universe</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:58501/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:53809/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Personal Website</title>
-      <link>http://localhost:58501/projects/mywebsite/</link>
+      <link>http://localhost:53809/projects/mywebsite/</link>
       <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/mywebsite/</guid>
+      <guid>http://localhost:53809/projects/mywebsite/</guid>
       <description>this site - an ongoing project!</description>
     </item>
     <item>
       <title>PDF reader easier</title>
-      <link>http://localhost:58501/projects/pdf_reader/</link>
+      <link>http://localhost:53809/projects/pdf_reader/</link>
       <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/pdf_reader/</guid>
+      <guid>http://localhost:53809/projects/pdf_reader/</guid>
       <description>&lt;p&gt;in progress&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cloud Technologies for Proteomic Analysis</title>
-      <link>http://localhost:58501/projects/cloud_proteomics/</link>
+      <link>http://localhost:53809/projects/cloud_proteomics/</link>
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/cloud_proteomics/</guid>
+      <guid>http://localhost:53809/projects/cloud_proteomics/</guid>
       <description>traveling through the clouds</description>
     </item>
     <item>
       <title>Avalanche of Goodness</title>
-      <link>http://localhost:58501/projects/avalancheofgoodness/</link>
+      <link>http://localhost:53809/projects/avalancheofgoodness/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/avalancheofgoodness/</guid>
+      <guid>http://localhost:53809/projects/avalancheofgoodness/</guid>
       <description>art and computer, a pair like lightning and thunder</description>
     </item>
     <item>
       <title>Recon on War</title>
-      <link>http://localhost:58501/projects/recononwar/</link>
+      <link>http://localhost:53809/projects/recononwar/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/recononwar/</guid>
+      <guid>http://localhost:53809/projects/recononwar/</guid>
       <description>visualizing DoD contracts</description>
     </item>
     <item>
       <title>Pharma, Finance, and Healthcare</title>
-      <link>http://localhost:58501/projects/pharma_finance/</link>
+      <link>http://localhost:53809/projects/pharma_finance/</link>
       <pubDate>Fri, 01 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/pharma_finance/</guid>
+      <guid>http://localhost:53809/projects/pharma_finance/</guid>
       <description>Predicting transaction prices</description>
     </item>
     <item>
       <title>Health Indices and Geospatial Data</title>
-      <link>http://localhost:58501/projects/dssg/</link>
+      <link>http://localhost:53809/projects/dssg/</link>
       <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/dssg/</guid>
+      <guid>http://localhost:53809/projects/dssg/</guid>
       <description>maternal and child health prediction using satellite imagery</description>
     </item>
     <item>
       <title>Modeling the Conservation of Florida Manatees</title>
-      <link>http://localhost:58501/projects/pomdp/</link>
+      <link>http://localhost:53809/projects/pomdp/</link>
       <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/pomdp/</guid>
+      <guid>http://localhost:53809/projects/pomdp/</guid>
       <description>Using POMDP Methods</description>
     </item>
     <item>
       <title>Erythrocyte Analysis</title>
-      <link>http://localhost:58501/projects/erythrocyte/</link>
+      <link>http://localhost:53809/projects/erythrocyte/</link>
       <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/erythrocyte/</guid>
+      <guid>http://localhost:53809/projects/erythrocyte/</guid>
       <description>&lt;p&gt;I will add this soon!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Akūpāra (अकूपार)</title>
-      <link>http://localhost:58501/projects/akupara/</link>
+      <link>http://localhost:53809/projects/akupara/</link>
       <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/akupara/</guid>
+      <guid>http://localhost:53809/projects/akupara/</guid>
       <description>communicating with the boundless world turtle</description>
     </item>
     <item>
       <title>Eddic Poetry Analysis</title>
-      <link>http://localhost:58501/projects/eddicpoetry/</link>
+      <link>http://localhost:53809/projects/eddicpoetry/</link>
       <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/eddicpoetry/</guid>
+      <guid>http://localhost:53809/projects/eddicpoetry/</guid>
       <description>statistics and computational humanities</description>
     </item>
     <item>
       <title>A Convex Approach to Two-Layer CNNs</title>
-      <link>http://localhost:58501/projects/convexcnn/</link>
+      <link>http://localhost:53809/projects/convexcnn/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/convexcnn/</guid>
+      <guid>http://localhost:53809/projects/convexcnn/</guid>
       <description>CS 231N Project</description>
     </item>
     <item>
       <title>Automatic Classification of C. elegans</title>
-      <link>http://localhost:58501/projects/celegans/</link>
+      <link>http://localhost:53809/projects/celegans/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/celegans/</guid>
+      <guid>http://localhost:53809/projects/celegans/</guid>
       <description>A Machine Learning Approach</description>
     </item>
     <item>
       <title>Door Authorization Control Apparatus</title>
-      <link>http://localhost:58501/projects/daca/</link>
+      <link>http://localhost:53809/projects/daca/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/daca/</guid>
+      <guid>http://localhost:53809/projects/daca/</guid>
       <description>License Plate detection with a microcontroller</description>
     </item>
     <item>
       <title>Glyde</title>
-      <link>http://localhost:58501/projects/glyde/</link>
+      <link>http://localhost:53809/projects/glyde/</link>
       <pubDate>Thu, 01 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/glyde/</guid>
+      <guid>http://localhost:53809/projects/glyde/</guid>
       <description>like swype but more fun</description>
     </item>
     <item>
       <title>Essential Tremor Measurement and Analysis</title>
-      <link>http://localhost:58501/projects/essentialtremor/</link>
+      <link>http://localhost:53809/projects/essentialtremor/</link>
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/essentialtremor/</guid>
+      <guid>http://localhost:53809/projects/essentialtremor/</guid>
       <description>measuring hand movement with a Raspberry Pi</description>
     </item>
     <item>
       <title>Sequence Analysis of Genes</title>
-      <link>http://localhost:58501/projects/duckweed/</link>
+      <link>http://localhost:53809/projects/duckweed/</link>
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/duckweed/</guid>
+      <guid>http://localhost:53809/projects/duckweed/</guid>
       <description>Landoltia Punctata aka Duckweed</description>
     </item>
     <item>
       <title>Paper Vision</title>
-      <link>http://localhost:58501/projects/papervision/</link>
+      <link>http://localhost:53809/projects/papervision/</link>
       <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/papervision/</guid>
+      <guid>http://localhost:53809/projects/papervision/</guid>
       <description>so much is possible with just some paper and some vision!</description>
     </item>
     <item>
       <title>Digital Distance</title>
-      <link>http://localhost:58501/projects/digitaldistance/</link>
+      <link>http://localhost:53809/projects/digitaldistance/</link>
       <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/digitaldistance/</guid>
+      <guid>http://localhost:53809/projects/digitaldistance/</guid>
       <description>measuring distances by just moving your phone</description>
     </item>
     <item>
       <title>Indoor Positioning System</title>
-      <link>http://localhost:58501/projects/ips/</link>
+      <link>http://localhost:53809/projects/ips/</link>
       <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:58501/projects/ips/</guid>
+      <guid>http://localhost:53809/projects/ips/</guid>
       <description>Coordinating Cameras and Computer Vision for Positioning</description>
     </item>
   </channel>

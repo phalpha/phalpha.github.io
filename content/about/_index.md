@@ -34,7 +34,7 @@ Check out my **[blog post](https://phalpha.github.io/writings/whoami)** on "Who 
 {{< timeline_event 
     date="2000" 
     title="Hello World!" 
-    image="images/timeline/kid.jpg" 
+    image="images/timeline/young.jpg" 
 >}}
 
 I was born on November 30, 2000. Two of my birthday twins are Filipino revolutionary leader Andres Bonifacio (1863-1897), and the highest-rated chess grandmaster Magnus Carlsen (1990 - present). 
