@@ -136,7 +136,7 @@ I started my Master's degree in 2023. Near the start of 2024, I had to take a le
 
 {{< collapsible  >}}
 
-I just graduated from college, and I am currently looking for full time employment. 
+I just graduated from college, and I am currently looking for full time employment!
 
 Ultimately I love the act of creating and discovering new things, especially in collaboration with others. I have experience with various kinds of technologies, but I really believe that it is the people working on the technology that make the difference, not just the technology by itself. In that sense, I take very seriously my personal commitments to doing good work with the skills and time I have. 
 
