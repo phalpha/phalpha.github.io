@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>History on me, you, and the universe</title>
-    <link>http://localhost:52066/tags/history/</link>
+    <link>http://localhost:58501/tags/history/</link>
     <description>Recent content in History on me, you, and the universe</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:52066/tags/history/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58501/tags/history/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do Names Matter? Health and Diagnosis of Disease</title>
-      <link>http://localhost:52066/writings/donamesmatter/</link>
+      <link>http://localhost:58501/writings/donamesmatter/</link>
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52066/writings/donamesmatter/</guid>
+      <guid>http://localhost:58501/writings/donamesmatter/</guid>
       <description>what is the story of myalgic encephaloymelitis?</description>
     </item>
     <item>
       <title>Some Mathematical Poetry</title>
-      <link>http://localhost:52066/writings/mathemagical/</link>
+      <link>http://localhost:58501/writings/mathemagical/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52066/writings/mathemagical/</guid>
+      <guid>http://localhost:58501/writings/mathemagical/</guid>
       <description>math and poetry? together?</description>
     </item>
     <item>
       <title>The Nature of the Scientific Debate around Human Nature: Lewontin, Owens, Spandrels, and Sociobiology </title>
-      <link>http://localhost:52066/writings/spandrels/</link>
+      <link>http://localhost:58501/writings/spandrels/</link>
       <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52066/writings/spandrels/</guid>
+      <guid>http://localhost:58501/writings/spandrels/</guid>
       <description>a historical and philosophical dive into what it means to be human</description>
     </item>
   </channel>

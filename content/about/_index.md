@@ -9,17 +9,10 @@ draft: false
 
 {{< collapsible >}}
 
-In January 2020, during my first year at Stanford University, I took an elective class called "Heartfulness, Mindfulness, Compassion, and Responsibility." The homework before the first class was to answer the following question: "Who are you?"
-
-Here's what I wrote then:
-
-*"I am a brother to one, a son to two, a cousin to ten, a friend to many, and a student of the world. I am from hectic yet melancholy Central Jersey suburbs with neighborhood movie days, block parties, and sports activities, but I am also from the tropical Western Ghats in southwest India amidst hills, forests, and villages. I am a thinker, discoverer, and explorer. I am not artistically talented but I love to doodle; I am not musically talented but I love to hum and sing. I am at times silent and radiate peace, like a gentle fawn, yet at other times I am as loud and full of chaos, like fireworks in the sky. I am a social and political subject of this world. I am desperately searching for solutions and explanations for all the suffering that surrounds and overwhelms me. I am happy but I am also a little sad. I am an eager learner and an enthusiastic teacher. I am stumbling because of the burdens on my back, the pain in my heart, and the exhaustion in my muscles, which threaten to make me fall at any moment. I am who I am because of those who have inspired me - my family, my friends, my teachers, and everyone else, across time, space, species, and existence. I am stubborn and I am unsatisfied. I am afraid but I am brave. I am imperfect but I am improving. I am Poojit Hegde."*
-
-Five years later, while honoring the words I wrote then, let me make a few revisions:
 
 *"I am a brother to one, a son to two, a cousin to ten, a friend to many, and a student of the world. I am from a cozy yet spirited Central Jersey suburb brimming with life—where neighborhood block parties erupted spontaneously, children turned every street into their personal football field, and uncles and aunties engaged in political battles that rivaled any town hall meeting. I am also from southwest India -- with connections to the depths of life in the mountainous Western Ghats along with ties to cities in the interior buzzing with human activity. Now, I am creating a new home for myself in the bustling Bay Area, immersing myself in the layers of lore and stories that this place holds. I am an aspiring artist who loves to sketch and doodle; I am an aspiring musician who loves to hum and sing. I am a scientist who seeks to understand the world, and I am an engineer who seeks to contribute to human production. I am at times silent and radiate peace, like a gentle fawn, yet at other times I am as loud and full of chaos, like fireworks in the sky. I am a social and political subject of this world. I am desperately searching for solutions and explanations for all the suffering that surrounds me. I am happy but I am also a little sad. I am an eager learner and an enthusiastic teacher. I stumble sometimes but my fear of falling is nothing compared to my confidence in getting back up. I am who I am because of those who have inspired me - my family, my friends, my teachers, and everyone else, across time, space, species, and existence. I am stubborn and I am unsatisfied. I am afraid but I am brave. I am imperfect but I am improving. I am Poojit Hegde."*
 
-Check out my [blog post](https://phalpha.github.io/writings/whoami) on "Who am I?" to read a deeper reflection on this question!
+Check out my **[blog post](https://phalpha.github.io/writings/whoami)** on "Who am I?" to read a deeper reflection on this question!
 
 
 {{< /collapsible>}}

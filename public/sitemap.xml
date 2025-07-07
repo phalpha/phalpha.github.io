@@ -2,111 +2,109 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:53308/</loc>
+    <loc>http://localhost:58501/</loc>
     <lastmod>2025-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/mywebsite/</loc>
+    <loc>http://localhost:58501/projects/mywebsite/</loc>
     <lastmod>2025-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/</loc>
+    <loc>http://localhost:58501/projects/</loc>
     <lastmod>2025-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/thoughts/</loc>
+    <loc>http://localhost:58501/thoughts/</loc>
     <lastmod>2025-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/tags/life/</loc>
+    <loc>http://localhost:58501/tags/life/</loc>
     <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/tags/</loc>
+    <loc>http://localhost:58501/tags/</loc>
     <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/writings/whoami/</loc>
+    <loc>http://localhost:58501/writings/whoami/</loc>
     <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/writings/</loc>
+    <loc>http://localhost:58501/writings/</loc>
     <lastmod>2025-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/pdf_reader/</loc>
+    <loc>http://localhost:58501/projects/pdf_reader/</loc>
     <lastmod>2025-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/cloud_proteomics/</loc>
+    <loc>http://localhost:58501/projects/cloud_proteomics/</loc>
     <lastmod>2025-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/writings/donamesmatter/</loc>
+    <loc>http://localhost:58501/writings/donamesmatter/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/tags/health/</loc>
+    <loc>http://localhost:58501/tags/health/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/tags/history/</loc>
+    <loc>http://localhost:58501/tags/history/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/tags/science/</loc>
+    <loc>http://localhost:58501/tags/science/</loc>
     <lastmod>2025-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/avalancheofgoodness/</loc>
+    <loc>http://localhost:58501/projects/avalancheofgoodness/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/recononwar/</loc>
+    <loc>http://localhost:58501/projects/recononwar/</loc>
     <lastmod>2024-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/tags/philosophy/</loc>
+    <loc>http://localhost:58501/tags/philosophy/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/writings/mathemagical/</loc>
+    <loc>http://localhost:58501/writings/mathemagical/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/pharma_finance/</loc>
+    <loc>http://localhost:58501/projects/pharma_finance/</loc>
     <lastmod>2023-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/dssg/</loc>
+    <loc>http://localhost:58501/projects/dssg/</loc>
     <lastmod>2023-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/about/</loc>
+    <loc>http://localhost:58501/about/</loc>
     <lastmod>2023-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/writings/spandrels/</loc>
+    <loc>http://localhost:58501/writings/spandrels/</loc>
     <lastmod>2023-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/pomdp/</loc>
+    <loc>http://localhost:58501/projects/pomdp/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/erythrocyte/</loc>
+    <loc>http://localhost:58501/projects/erythrocyte/</loc>
     <lastmod>2022-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/akupara/</loc>
+    <loc>http://localhost:58501/projects/akupara/</loc>
     <lastmod>2022-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/eddicpoetry/</loc>
+    <loc>http://localhost:58501/projects/eddicpoetry/</loc>
     <lastmod>2022-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/convexcnn/</loc>
+    <loc>http://localhost:58501/projects/convexcnn/</loc>
     <lastmod>2021-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/celegans/</loc>
+    <loc>http://localhost:58501/projects/celegans/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/daca/</loc>
+    <loc>http://localhost:58501/projects/daca/</loc>
     <lastmod>2018-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/glyde/</loc>
+    <loc>http://localhost:58501/projects/glyde/</loc>
     <lastmod>2018-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/essentialtremor/</loc>
+    <loc>http://localhost:58501/projects/essentialtremor/</loc>
     <lastmod>2017-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/duckweed/</loc>
+    <loc>http://localhost:58501/projects/duckweed/</loc>
     <lastmod>2017-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/papervision/</loc>
+    <loc>http://localhost:58501/projects/papervision/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/digitaldistance/</loc>
+    <loc>http://localhost:58501/projects/digitaldistance/</loc>
     <lastmod>2016-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:53308/projects/ips/</loc>
+    <loc>http://localhost:58501/projects/ips/</loc>
     <lastmod>2016-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:53308/tags/2023/</loc>
   </url>
 </urlset>
